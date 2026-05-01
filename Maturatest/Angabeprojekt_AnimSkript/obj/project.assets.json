@@ -8,24 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Viktor Reithofer\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\clemens\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Viktor Reithofer\\Downloads\\Maturaprojekt\\Maturatest\\Angabeprojekt_AnimSkript\\AnimSkript.csproj",
+      "projectUniqueName": "C:\\Users\\clemens\\Downloads\\Maturaprojekt\\Maturatest\\Angabeprojekt_AnimSkript\\AnimSkript.csproj",
       "projectName": "AnimSkript",
-      "projectPath": "C:\\Users\\Viktor Reithofer\\Downloads\\Maturaprojekt\\Maturatest\\Angabeprojekt_AnimSkript\\AnimSkript.csproj",
-      "packagesPath": "C:\\Users\\Viktor Reithofer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Viktor Reithofer\\Downloads\\Maturaprojekt\\Maturatest\\Angabeprojekt_AnimSkript\\obj\\",
+      "projectPath": "C:\\Users\\clemens\\Downloads\\Maturaprojekt\\Maturatest\\Angabeprojekt_AnimSkript\\AnimSkript.csproj",
+      "packagesPath": "C:\\Users\\clemens\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\clemens\\Downloads\\Maturaprojekt\\Maturatest\\Angabeprojekt_AnimSkript\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Viktor Reithofer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\clemens\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +46,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -67,6 +62,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-arm64",
+            "version": "[8.0.26, 8.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.26, 8.0.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -75,7 +88,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

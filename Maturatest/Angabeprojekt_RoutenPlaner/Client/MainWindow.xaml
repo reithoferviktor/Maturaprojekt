@@ -1,0 +1,54 @@
+<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RoutenPlaner — Client" Height="720" Width="1200">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Route">
+                <MenuItem Header="_Speichern" Click="miSpeichern_Click"/>
+                <MenuItem Header="_Laden"     Click="miLaden_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock x:Name="lblStatus" Text="Bereit. Klicke auf 'Verbinden'."/>
+            </StatusBarItem>
+        </StatusBar>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="8">
+                <Button x:Name="btnVerbinden" Content="Verbinden" Margin="0,0,0,8" Padding="6,4" Click="btnVerbinden_Click"/>
+
+                <GroupBox Header="Pfad (Dijkstra)" Margin="0,0,0,8" Padding="4">
+                    <StackPanel>
+                        <TextBlock Text="Von:"/>
+                        <ComboBox x:Name="cbVon" Margin="0,2,0,6"/>
+                        <TextBlock Text="Nach:"/>
+                        <ComboBox x:Name="cbNach" Margin="0,2,0,6"/>
+                        <Button x:Name="btnPfad" Content="Pfad finden" Padding="6,4" Click="btnPfad_Click"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Tour (max. 6)" Margin="0,0,0,8" Padding="4">
+                    <StackPanel>
+                        <TextBlock Text="Stationen waehlen (Strg/Shift):"/>
+                        <ListBox x:Name="lbTour" Height="160" SelectionMode="Multiple" Margin="0,2,0,6"/>
+                        <Button x:Name="btnTour" Content="Beste Tour finden" Padding="6,4" Click="btnTour_Click"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Gespeicherte Routen" Padding="4">
+                    <ListBox x:Name="lbGespeichert" Height="160"/>
+                </GroupBox>
+            </StackPanel>
+
+            <Canvas x:Name="canvas" Grid.Column="1" Background="#F8F8F2" Margin="0,8,8,8"/>
+        </Grid>
+    </DockPanel>
+</Window>
