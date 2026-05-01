@@ -1,0 +1,20 @@
+﻿<Window x:Class="SubwayNetz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubwayNetz"
+        xmlns:sg="clr-namespace:SubwayGraph;assembly=SubwayGraph"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*">
+                
+            </RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <sg:SubwayMapControl x:Name="giraffe" StartStationSelected="giraffe_StartStationSelected" EndStationSelected="giraffe_EndStationSelected" Grid.Row="0"></sg:SubwayMapControl>
+        <Label x:Name="lb" Grid.Row="1"></Label>
+    </Grid>
+</Window>

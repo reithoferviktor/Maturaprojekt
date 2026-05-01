@@ -1,0 +1,22 @@
+C:\Users\schna\source\repos\Rechner\NetworkLib\bin\Debug\net8.0\NetworkLib.deps.json
+C:\Users\schna\source\repos\Rechner\NetworkLib\bin\Debug\net8.0\NetworkLib.dll
+C:\Users\schna\source\repos\Rechner\NetworkLib\bin\Debug\net8.0\NetworkLib.pdb
+C:\Users\schna\source\repos\Rechner\NetworkLib\obj\Debug\net8.0\NetworkLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\schna\source\repos\Rechner\NetworkLib\obj\Debug\net8.0\NetworkLib.AssemblyInfoInputs.cache
+C:\Users\schna\source\repos\Rechner\NetworkLib\obj\Debug\net8.0\NetworkLib.AssemblyInfo.cs
+C:\Users\schna\source\repos\Rechner\NetworkLib\obj\Debug\net8.0\NetworkLib.csproj.CoreCompileInputs.cache
+C:\Users\schna\source\repos\Rechner\NetworkLib\obj\Debug\net8.0\NetworkLib.dll
+C:\Users\schna\source\repos\Rechner\NetworkLib\obj\Debug\net8.0\refint\NetworkLib.dll
+C:\Users\schna\source\repos\Rechner\NetworkLib\obj\Debug\net8.0\NetworkLib.pdb
+C:\Users\schna\source\repos\Rechner\NetworkLib\obj\Debug\net8.0\ref\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\bin\Debug\net8.0\NetworkLib.deps.json
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\bin\Debug\net8.0\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\bin\Debug\net8.0\NetworkLib.pdb
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\obj\Debug\net8.0\NetworkLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\obj\Debug\net8.0\NetworkLib.AssemblyInfoInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\obj\Debug\net8.0\NetworkLib.AssemblyInfo.cs
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\obj\Debug\net8.0\NetworkLib.csproj.CoreCompileInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\obj\Debug\net8.0\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\obj\Debug\net8.0\refint\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\obj\Debug\net8.0\NetworkLib.pdb
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\NetworkLib\obj\Debug\net8.0\ref\NetworkLib.dll

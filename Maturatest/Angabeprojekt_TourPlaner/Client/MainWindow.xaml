@@ -1,0 +1,47 @@
+<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Client"
+        Title="TourPlaner Client" Height="700" Width="1100">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Canvas x:Name="canvas" Background="#F4F4F0" />
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Server" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" Margin="0,4,0,12">
+                <TextBox x:Name="tbHost" Width="120" Text="127.0.0.1"/>
+                <TextBox x:Name="tbPort" Width="60" Text="5050" Margin="4,0,0,0"/>
+                <Button x:Name="btnConnect" Content="Verbinden" Click="btnConnect_Click" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <TextBlock Text="1. Pfad anzeigen (Dijkstra)" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" Margin="0,4,0,4">
+                <TextBlock Text="von" Width="40"/>
+                <ComboBox x:Name="cbFrom" Width="160"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
+                <TextBlock Text="nach" Width="40"/>
+                <ComboBox x:Name="cbTo" Width="160"/>
+            </StackPanel>
+            <Button Content="Pfad anzeigen" Click="btnPath_Click" Margin="0,0,0,12"/>
+
+            <TextBlock Text="2. Clustern (KMeans)" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" Margin="0,4,0,4">
+                <TextBlock Text="k =" Width="40"/>
+                <TextBox x:Name="tbK" Width="60" Text="3"/>
+            </StackPanel>
+            <Button Content="Clustern" Click="btnCluster_Click" Margin="0,0,0,12"/>
+
+            <TextBlock Text="3. Beste Tour (Permutationen)" FontWeight="Bold"/>
+            <ListBox x:Name="lbTour" Height="120" SelectionMode="Multiple"/>
+            <Button Content="Beste Tour" Click="btnTour_Click" Margin="0,4,0,12"/>
+
+            <TextBlock x:Name="tbStatus" Text="Nicht verbunden." Foreground="DarkRed" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,56 @@
+﻿<Window x:Class="walwonders.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:walwonders"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Menu Grid.Row="0" Grid.ColumnSpan="2">
+            <MenuItem Header="Neues Waldwunder" Click="MenuItem_Click"></MenuItem>
+        </Menu>
+        <Canvas x:Name="canvas"  Grid.Row="1" >
+            <Canvas.Background>
+                <ImageBrush ImageSource="/blobid0.png"></ImageBrush>
+            </Canvas.Background>
+        </Canvas>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Label Content="Suche nach Schlagwort:" Grid.Row="0"></Label>
+            <TextBox x:Name="swtb" Grid.Row="1"></TextBox>
+            <Button Grid.Row="2" Content="suchen" Click="Button_Click"></Button>
+            <ListBox x:Name="lb" Grid.Row="3" Grid.RowSpan="3" ItemsSource="{Binding Path=OPS}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Label Content="{Binding Path=name}"></Label>
+                            <Label Content="{Binding Path=desc}"></Label>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <Button Grid.Column="1" Grid.Row="2" Content="Details zeigen" Click="Button_Click_1"></Button>
+    </Grid>
+</Window>

@@ -1,0 +1,70 @@
+﻿<Window x:Class="Rechner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rechner"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="tb_input"></TextBox>
+            <Button Grid.Column="1" x:Name="btn_calculate" Content="Berechnen"></Button>
+            <TextBlock x:Name="tbl_output" Grid.Column="2"></TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btn_clear" Content="C" Click="btn_clear_Click"></Button>
+            <Button Grid.Row="0" Grid.Column="1" x:Name="btn_paren_open" Content="(" Click="btn_paren_open_Click"></Button>
+            <Button Grid.Row="0" Grid.Column="2" x:Name="btn_paren_close" Content=")" Click="btn_paren_close_Click"></Button>
+            <Button Grid.Row="0" Grid.Column="3" x:Name="btn_pow" Content="^" Click="btn_pow_Click"></Button>
+
+            <Button Grid.Row="1" Grid.Column="0" x:Name="btn_7" Content="7" Click="btn_7_Click"></Button>
+            <Button Grid.Row="1" Grid.Column="1" x:Name="btn_8" Content="8" Click="btn_8_Click"></Button>
+            <Button Grid.Row="1" Grid.Column="2" x:Name="btn_9" Content="9" Click="btn_9_Click"></Button>
+            <Button Grid.Row="1" Grid.Column="3" x:Name="btn_div" Content="/" Click="btn_div_Click"></Button>
+
+            <Button Grid.Row="2" Grid.Column="0" x:Name="btn_4" Content="4" Click="btn_4_Click"></Button>
+            <Button Grid.Row="2" Grid.Column="1" x:Name="btn_5" Content="5" Click="btn_5_Click"></Button>
+            <Button Grid.Row="2" Grid.Column="2" x:Name="btn_6" Content="6" Click="btn_6_Click"></Button>
+            <Button Grid.Row="2" Grid.Column="3" x:Name="btn_mul" Content="*" Click="btn_mul_Click"></Button>
+
+            <Button Grid.Row="3" Grid.Column="0" x:Name="btn_1" Content="1" Click="btn_1_Click"></Button>
+            <Button Grid.Row="3" Grid.Column="1" x:Name="btn_2" Content="2" Click="btn_2_Click"></Button>
+            <Button Grid.Row="3" Grid.Column="2" x:Name="btn_3" Content="3" Click="btn_3_Click"></Button>
+            <Button Grid.Row="3" Grid.Column="3" x:Name="btn_sub" Content="-" Click="btn_sub_Click"></Button>
+
+            <Button Grid.Row="4" Grid.Column="0" x:Name="btn_backspace" Content="&lt;-" Click="btn_backspace_Click"></Button>
+            <Button Grid.Row="4" Grid.Column="1" x:Name="btn_0" Content="0" Click="btn_0_Click"></Button>
+            <Button Grid.Row="4" Grid.Column="2" x:Name="btn_equals" Content="=" Click="btn_equals_Click"></Button>
+            <Button Grid.Row="4" Grid.Column="3" x:Name="btn_add" Content="+" Click="btn_add_Click"></Button>
+            <ListBox Grid.Row="5" Grid.ColumnSpan="4" x:Name="yurrlb"></ListBox>
+        </Grid>
+    </Grid>
+</Window>

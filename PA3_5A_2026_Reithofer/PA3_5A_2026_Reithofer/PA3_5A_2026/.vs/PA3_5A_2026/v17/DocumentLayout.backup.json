@@ -1,0 +1,226 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Z:\\PA3_5A_2026\\PA3_5A_2026\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B704F1C4-2E4B-4E57-9876-FB15787B53D6}|Client\\Client.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B704F1C4-2E4B-4E57-9876-FB15787B53D6}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B704F1C4-2E4B-4E57-9876-FB15787B53D6}|Client\\Client.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B704F1C4-2E4B-4E57-9876-FB15787B53D6}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4295F67B-C120-453D-AD93-F55FBBB2D173}|NetworkLib\\NetworkLib.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\networklib\\msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4295F67B-C120-453D-AD93-F55FBBB2D173}|NetworkLib\\NetworkLib.csproj|solutionrelative:networklib\\msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D476DA34-A6CE-43F2-B483-C528B351DC4C}|srvr\\srvr.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\srvr\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D476DA34-A6CE-43F2-B483-C528B351DC4C}|srvr\\srvr.csproj|solutionrelative:srvr\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D476DA34-A6CE-43F2-B483-C528B351DC4C}|srvr\\srvr.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\srvr\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D476DA34-A6CE-43F2-B483-C528B351DC4C}|srvr\\srvr.csproj|solutionrelative:srvr\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B704F1C4-2E4B-4E57-9876-FB15787B53D6}|Client\\Client.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\client\\stadt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B704F1C4-2E4B-4E57-9876-FB15787B53D6}|Client\\Client.csproj|solutionrelative:client\\stadt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4295F67B-C120-453D-AD93-F55FBBB2D173}|NetworkLib\\NetworkLib.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\networklib\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4295F67B-C120-453D-AD93-F55FBBB2D173}|NetworkLib\\NetworkLib.csproj|solutionrelative:networklib\\transfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B704F1C4-2E4B-4E57-9876-FB15787B53D6}|Client\\Client.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B704F1C4-2E4B-4E57-9876-FB15787B53D6}|Client\\Client.csproj|solutionrelative:client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6BD29FA-3357-4B0B-936D-F86D0A97BD28}|Server\\Server.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6BD29FA-3357-4B0B-936D-F86D0A97BD28}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D476DA34-A6CE-43F2-B483-C528B351DC4C}|srvr\\srvr.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\srvr\\worldcity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D476DA34-A6CE-43F2-B483-C528B351DC4C}|srvr\\srvr.csproj|solutionrelative:srvr\\worldcity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D476DA34-A6CE-43F2-B483-C528B351DC4C}|srvr\\srvr.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\srvr\\citiesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D476DA34-A6CE-43F2-B483-C528B351DC4C}|srvr\\srvr.csproj|solutionrelative:srvr\\citiesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4295F67B-C120-453D-AD93-F55FBBB2D173}|NetworkLib\\NetworkLib.csproj|z:\\pa3_5a_2026\\pa3_5a_2026\\networklib\\receiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4295F67B-C120-453D-AD93-F55FBBB2D173}|NetworkLib\\NetworkLib.csproj|solutionrelative:networklib\\receiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Transfer.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\NetworkLib\\Transfer.cs",
+              "RelativeDocumentMoniker": "NetworkLib\\Transfer.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\NetworkLib\\Transfer.cs",
+              "RelativeToolTip": "NetworkLib\\Transfer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:20:31.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Receiver.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\NetworkLib\\Receiver.cs",
+              "RelativeDocumentMoniker": "NetworkLib\\Receiver.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\NetworkLib\\Receiver.cs",
+              "RelativeToolTip": "NetworkLib\\Receiver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:20:29.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MSG.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\NetworkLib\\MSG.cs",
+              "RelativeDocumentMoniker": "NetworkLib\\MSG.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\NetworkLib\\MSG.cs",
+              "RelativeToolTip": "NetworkLib\\MSG.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:20:27.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\srvr\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "srvr\\MainWindow.xaml",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\srvr\\MainWindow.xaml",
+              "RelativeToolTip": "srvr\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-17T07:17:08.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Client\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\MainWindow.xaml.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Client\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "Client\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwC8AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T18:07:20.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\srvr\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "srvr\\MainWindow.xaml.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\srvr\\MainWindow.xaml.cs",
+              "RelativeToolTip": "srvr\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAswEgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:17:08.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Client",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Client\\Client.csproj",
+              "RelativeDocumentMoniker": "Client\\Client.csproj",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Client\\Client.csproj",
+              "RelativeToolTip": "Client\\Client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-17T07:21:11.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CitiesDb.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\srvr\\CitiesDb.cs",
+              "RelativeDocumentMoniker": "srvr\\CitiesDb.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\srvr\\CitiesDb.cs",
+              "RelativeToolTip": "srvr\\CitiesDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:38:24.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Stadt.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Client\\Stadt.cs",
+              "RelativeDocumentMoniker": "Client\\Stadt.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Client\\Stadt.cs",
+              "RelativeToolTip": "Client\\Stadt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:58:58.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Client\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Client\\MainWindow.xaml",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Client\\MainWindow.xaml",
+              "RelativeToolTip": "Client\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-16T18:07:20.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Worldcity.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\srvr\\Worldcity.cs",
+              "RelativeDocumentMoniker": "srvr\\Worldcity.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\srvr\\Worldcity.cs",
+              "RelativeToolTip": "srvr\\Worldcity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:38:41.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "Z:\\PA3_5A_2026\\PA3_5A_2026\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T18:06:52.819Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.exe
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.deps.json
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.runtimeconfig.json
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.dll
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.pdb
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.csproj.AssemblyReference.cache
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2_MarkupCompile.cache
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2_MarkupCompile.lref
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.g.resources
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.AssemblyInfoInputs.cache
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.AssemblyInfo.cs
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.csproj.CoreCompileInputs.cache
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.dll
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\refint\Matura 2023 A2.dll
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.pdb
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.genruntimeconfig.cache
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\ref\Matura 2023 A2.dll
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Kakuro.dll
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Kakuro.pdb
+C:\Users\Wolfgang Schermann\source\repos\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.csproj.CopyComplete
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.exe
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.deps.json
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.runtimeconfig.json
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.dll
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.pdb
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Kakuro.dll
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.csproj.AssemblyReference.cache
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2_MarkupCompile.cache
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2_MarkupCompile.lref
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.g.resources
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.AssemblyInfoInputs.cache
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.AssemblyInfo.cs
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.csproj.CoreCompileInputs.cache
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.csproj.CopyComplete
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.dll
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\refint\Matura 2023 A2.dll
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.pdb
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.genruntimeconfig.cache
+C:\Users\Wolfgang Schermann\Desktop\5C\Matura\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\ref\Matura 2023 A2.dll
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.exe
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.deps.json
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.runtimeconfig.json
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.dll
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Matura 2023 A2.pdb
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\bin\Debug\net6.0-windows\Kakuro.dll
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.csproj.AssemblyReference.cache
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2_MarkupCompile.cache
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2_MarkupCompile.lref
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.g.resources
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.AssemblyInfoInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.AssemblyInfo.cs
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.csproj.CoreCompileInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2.087B03B7.Up2Date
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.dll
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\refint\Matura 2023 A2.dll
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.pdb
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\Matura 2023 A2.genruntimeconfig.cache
+C:\Users\Viktor Reithofer\Downloads\Matura 2023 A2\Matura 2023 A2\Matura 2023 A2\obj\Debug\net6.0-windows\ref\Matura 2023 A2.dll

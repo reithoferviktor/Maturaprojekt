@@ -1,0 +1,74 @@
+﻿<Window x:Class="Bildverwaltung.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bildverwaltung"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.New" CanExecute="NewAlbumCommand_CanExecute" Executed="NewAlbumCommand_Executed" ></CommandBinding>
+        <CommandBinding Command="ApplicationCommands.Open" CanExecute="Open_CanExecute" Executed="Open_Executed"></CommandBinding>
+        <CommandBinding Command="ApplicationCommands.Delete" CanExecute="Delete_CanExecute" Executed="Delete_Executed"></CommandBinding>
+        <CommandBinding Command="{x:Static local:MainWindow.MoveFile}" CanExecute="Move_CanExecute" Executed="Move_Executed"></CommandBinding>
+        <CommandBinding Command="{x:Static local:MainWindow.RotateFile}" CanExecute="Rotate_CanExecute" Executed="Rotate_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
+
+
+
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="_Datei">
+                <MenuItem Header="Neues Album" Command="ApplicationCommands.New"></MenuItem>
+                <MenuItem Header="Bilder hinzufügen" Command="ApplicationCommands.Open"></MenuItem>
+                <MenuItem Header="Auswahl löschen" Command="ApplicationCommands.Delete"></MenuItem>
+                <MenuItem x:Name="mnv" Header="Bilder verschieben" Command="{x:Static local:MainWindow.MoveFile}"></MenuItem>
+
+
+
+
+            </MenuItem>
+            <MenuItem Header="_Bearbeiten">
+                <MenuItem x:Name="mnr" Header="Bilder Rotieren" Command="{x:Static local:MainWindow.RotateFile}"></MenuItem>
+
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="lb" Grid.Row="1" Grid.ColumnSpan="2">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel></WrapPanel>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border Width="180">
+                            <StackPanel>
+                                <Image x:Name="imgi" Source="{Binding Path=img}"></Image>
+                            <TextBlock Text="{Binding Path=Flnm}"/>
+                        </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Label Content="Alben:" Grid.Row="0" Grid.Column="0"></Label>
+            <ComboBox x:Name="cb" Grid.Row="0" Grid.Column="1" SelectionChanged="cb_SelectionChanged">
+            </ComboBox>
+        </Grid>
+
+    </Grid>
+</Window>

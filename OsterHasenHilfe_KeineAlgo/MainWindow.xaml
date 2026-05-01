@@ -1,0 +1,70 @@
+<Window x:Class="OsterHasenHilfe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ultimatives Osterhasen Hilfs-Programm" Height="800" Width="1100"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <!-- Linke Seite: Eingabe und Steuerung -->
+            <ColumnDefinition Width="280"/>
+            <!-- Rechte Seite: Karte -->
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ===== Linke Spalte: Eingabebereich ===== -->
+        <StackPanel Grid.Column="0" Margin="10">
+
+            <!-- Aufgabe 1: Person hinzufügen -->
+            <GroupBox Header="Person registrieren" Margin="0,0,0,10">
+                <StackPanel Margin="5">
+                    <TextBlock Text="Name:"/>
+                    <TextBox x:Name="TbName" Margin="0,2,0,5"/>
+                    <TextBlock Text="Longitude:"/>
+                    <TextBox x:Name="TbLon" Margin="0,2,0,5"/>
+                    <TextBlock Text="Latitude:"/>
+                    <TextBox x:Name="TbLat" Margin="0,2,0,5"/>
+                    <Button Content="Hinzufügen" Click="BtnAdd_Click" Padding="5,3"/>
+                    <TextBlock x:Name="TbStatus" Foreground="Green" Margin="0,5,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Aufgabe 2: Alle anzeigen -->
+            <Button Content="Alle Personen anzeigen" Click="BtnShowAll_Click" Padding="5,3" Margin="0,0,0,10"/>
+
+            <!-- Aufgabe 3: Helfer-Aufteilung -->
+            <GroupBox Header="Helfer-Aufteilung (K-Means)" Margin="0,0,0,10">
+                <StackPanel Margin="5">
+                    <TextBlock Text="Anzahl Helfer:"/>
+                    <TextBox x:Name="TbHelfer" Text="5" Margin="0,2,0,5"/>
+                    <Button Content="Aufteilen" Click="BtnCluster_Click" Padding="5,3"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Aufgabe 4: Routenplanung -->
+            <GroupBox Header="Routenplanung" Margin="0,0,0,10">
+                <StackPanel Margin="5">
+                    <TextBlock Text="Helfer-Nr. für Startpunkt:" Margin="0,0,0,2"/>
+                    <TextBox x:Name="TbRouteHelfer" Text="1" Margin="0,2,0,5"/>
+                    <TextBlock Text="Klicke auf die Karte um den Startpunkt zu setzen." TextWrapping="Wrap"
+                               FontStyle="Italic" Foreground="Gray" Margin="0,0,0,5"/>
+                    <Button Content="Route berechnen" Click="BtnRoute_Click" Padding="5,3"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Personenliste -->
+            <GroupBox Header="Registrierte Personen" MaxHeight="200">
+                <ListBox x:Name="LbPersonen" DisplayMemberPath="Name"/>
+            </GroupBox>
+        </StackPanel>
+
+        <!-- ===== Rechte Spalte: Karte ===== -->
+        <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="5">
+            <Canvas x:Name="MapCanvas" ClipToBounds="True" MouseLeftButtonDown="MapCanvas_MouseDown">
+                <!-- Kartenbild als Hintergrund -->
+                <Canvas.Background>
+                    <ImageBrush ImageSource="Stadtplan-Wiener-Neustadt.jpg" Stretch="Fill"/>
+                </Canvas.Background>
+            </Canvas>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85EFE7EE-C831-4C4C-8888-E11FA979DF5B}|Fillialien.csproj|c:\\users\\viktor reithofer\\source\\repos\\fillialien\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85EFE7EE-C831-4C4C-8888-E11FA979DF5B}|Fillialien.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85EFE7EE-C831-4C4C-8888-E11FA979DF5B}|Fillialien.csproj|c:\\users\\viktor reithofer\\source\\repos\\fillialien\\clusterdia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85EFE7EE-C831-4C4C-8888-E11FA979DF5B}|Fillialien.csproj|solutionrelative:clusterdia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85EFE7EE-C831-4C4C-8888-E11FA979DF5B}|Fillialien.csproj|c:\\users\\viktor reithofer\\source\\repos\\fillialien\\fillialien.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{85EFE7EE-C831-4C4C-8888-E11FA979DF5B}|Fillialien.csproj|solutionrelative:fillialien.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85EFE7EE-C831-4C4C-8888-E11FA979DF5B}|Fillialien.csproj|c:\\users\\viktor reithofer\\source\\repos\\fillialien\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85EFE7EE-C831-4C4C-8888-E11FA979DF5B}|Fillialien.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clusterdia.xaml",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\clusterdia.xaml",
+              "RelativeDocumentMoniker": "clusterdia.xaml",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\clusterdia.xaml",
+              "RelativeToolTip": "clusterdia.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-25T14:26:09.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fillialien",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\Fillialien.csproj",
+              "RelativeDocumentMoniker": "Fillialien.csproj",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\Fillialien.csproj",
+              "RelativeToolTip": "Fillialien.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-25T13:45:21.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-25T11:26:50.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Fillialien\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAApwHcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T11:26:45.524Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

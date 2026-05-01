@@ -1,0 +1,14 @@
+﻿<Window x:Class="Bildverwaltung.movedial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bildverwaltung"
+        mc:Ignorable="d"
+        Title="movedial" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cb1" HorizontalAlignment="Center" Margin="0,113,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="mvbtn" Content="move" HorizontalAlignment="Left" Margin="360,184,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|c:\\users\\viktor reithofer\\source\\repos\\bildverwaltung\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|c:\\users\\viktor reithofer\\source\\repos\\bildverwaltung\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|c:\\users\\viktor reithofer\\source\\repos\\bildverwaltung\\newalbumdial.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|solutionrelative:newalbumdial.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|c:\\users\\viktor reithofer\\source\\repos\\bildverwaltung\\movedial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|solutionrelative:movedial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|c:\\users\\viktor reithofer\\source\\repos\\bildverwaltung\\newalbumdial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|solutionrelative:newalbumdial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|c:\\users\\viktor reithofer\\source\\repos\\bildverwaltung\\bildverwaltung.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B00C8001-4FCB-4F96-A7FA-54167C52182F}|Bildverwaltung.csproj|solutionrelative:bildverwaltung.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "movedial.xaml",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\movedial.xaml",
+              "RelativeDocumentMoniker": "movedial.xaml",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\movedial.xaml",
+              "RelativeToolTip": "movedial.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-10T00:37:02.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bildverwaltung.csproj",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\Bildverwaltung.csproj",
+              "RelativeDocumentMoniker": "Bildverwaltung.csproj",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\Bildverwaltung.csproj",
+              "RelativeToolTip": "Bildverwaltung.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-09T18:04:30.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewAlbumDial.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\NewAlbumDial.xaml.cs",
+              "RelativeDocumentMoniker": "NewAlbumDial.xaml.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\NewAlbumDial.xaml.cs",
+              "RelativeToolTip": "NewAlbumDial.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T18:04:51.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-09T20:05:52.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewAlbumDial.xaml",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\NewAlbumDial.xaml",
+              "RelativeDocumentMoniker": "NewAlbumDial.xaml",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\NewAlbumDial.xaml",
+              "RelativeToolTip": "NewAlbumDial.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-09T18:04:44.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\Bildverwaltung\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAvwP4AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T07:49:44.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

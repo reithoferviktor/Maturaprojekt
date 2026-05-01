@@ -1,0 +1,43 @@
+﻿<Window x:Class="walwonders.NEwdialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:walwonders"
+        mc:Ignorable="d"
+        Title="NEwdialog" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Label Content="NAME:" Grid.Column="0" Grid.Row="0"></Label>
+        <Label Content="DESCRIPTION:" Grid.Column="0" Grid.Row="1"></Label>
+        <Label Content="PROVINCE:" Grid.Column="0" Grid.Row="2"></Label>
+        <Label Content="LATITUDE:" Grid.Column="0" Grid.Row="3"></Label>
+        <Label Content="LONGITUDE:" Grid.Column="0" Grid.Row="4"></Label>
+        <Label Content="TYPE:" Grid.Column="0" Grid.Row="5"></Label>
+        <TextBox x:Name="tbname" Grid.Column="1" Grid.Row="0"></TextBox>
+        <TextBox x:Name="tbdesc" Grid.Column="1" Grid.Row="1"></TextBox>
+        <ComboBox x:Name="comboprov" Grid.Column="1" Grid.Row="2"></ComboBox>
+        <TextBox x:Name="tblat" Grid.Column="1" Grid.Row="3"></TextBox>
+        <TextBox x:Name="tblon" Grid.Column="1" Grid.Row="4"></TextBox>
+        <TextBox x:Name="tbtype" Grid.Column="1" Grid.Row="5"></TextBox>
+
+        <ListBox Grid.Column="2"  Grid.RowSpan="5" x:Name="lb"></ListBox>
+        <Button Grid.Column="2" Grid.Row="5" Content="Bilder hinzufügen" Click="Button_Click"></Button>
+        <Button Grid.Row="6" Grid.ColumnSpan="3" Content="Waldwunder hinzufügen" x:Name="addbtn"></Button>
+    </Grid>
+</Window>

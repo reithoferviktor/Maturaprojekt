@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "wxtohoDeCkw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Viktor Reithofer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Viktor Reithofer\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Viktor Reithofer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Viktor Reithofer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+  ],
+  "logs": []
+}

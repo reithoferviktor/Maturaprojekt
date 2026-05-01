@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|c:\\users\\viktor reithofer\\downloads\\matura 2023 a2\\matura 2023 a2\\matura 2023 a2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|solutionrelative:matura 2023 a2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|c:\\users\\viktor reithofer\\downloads\\matura 2023 a2\\matura 2023 a2\\matura 2023 a2\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|solutionrelative:matura 2023 a2\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|c:\\users\\viktor reithofer\\downloads\\matura 2023 a2\\matura 2023 a2\\matura 2023 a2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|solutionrelative:matura 2023 a2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|c:\\users\\viktor reithofer\\downloads\\matura 2023 a2\\matura 2023 a2\\matura 2023 a2\\kakuro.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|solutionrelative:matura 2023 a2\\kakuro.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|c:\\users\\viktor reithofer\\downloads\\matura 2023 a2\\matura 2023 a2\\matura 2023 a2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3CFD8160-CBD8-4620-AFFB-028E9A0AA960}|Matura 2023 A2\\Matura 2023 A2.csproj|solutionrelative:matura 2023 a2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\Cell.cs",
+              "RelativeDocumentMoniker": "Matura 2023 A2\\Cell.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\Cell.cs",
+              "RelativeToolTip": "Matura 2023 A2\\Cell.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T08:29:23.1Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Kakuro.dll",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\Kakuro.dll",
+              "RelativeDocumentMoniker": "Matura 2023 A2\\Kakuro.dll",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\Kakuro.dll",
+              "RelativeToolTip": "Matura 2023 A2\\Kakuro.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-04-20T17:31:42.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\App.xaml",
+              "RelativeDocumentMoniker": "Matura 2023 A2\\App.xaml",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\App.xaml",
+              "RelativeToolTip": "Matura 2023 A2\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T17:31:41.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Matura 2023 A2\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\MainWindow.xaml",
+              "RelativeToolTip": "Matura 2023 A2\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T17:31:15.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Matura 2023 A2\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\Downloads\\Matura 2023 A2\\Matura 2023 A2\\Matura 2023 A2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Matura 2023 A2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAvwN8AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T17:31:15.798Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

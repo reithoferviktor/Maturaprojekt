@@ -1,0 +1,210 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\until.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:until.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\wenn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:wenn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\repeat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:repeat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\stmt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:stmt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\programm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:programm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\abstractexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:abstractexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|c:\\users\\viktor reithofer\\source\\repos\\robotikern\\robotikern.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{431E15FB-7C3B-4817-8CAF-0A2B5466CFD9}|ROBOTIKERN.csproj|solutionrelative:robotikern.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "COLLECT.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\COLLECT.cs",
+              "RelativeDocumentMoniker": "COLLECT.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\COLLECT.cs",
+              "RelativeToolTip": "COLLECT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T15:11:41.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MOVE.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\MOVE.cs",
+              "RelativeDocumentMoniker": "MOVE.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\MOVE.cs*",
+              "RelativeToolTip": "MOVE.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowC4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T15:01:33.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WENN.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\WENN.cs",
+              "RelativeDocumentMoniker": "WENN.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\WENN.cs",
+              "RelativeToolTip": "WENN.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwEMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T14:52:51.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UNTIL.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\UNTIL.cs",
+              "RelativeDocumentMoniker": "UNTIL.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\UNTIL.cs",
+              "RelativeToolTip": "UNTIL.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T14:25:36.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Repeat.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\Repeat.cs",
+              "RelativeDocumentMoniker": "Repeat.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\Repeat.cs",
+              "RelativeToolTip": "Repeat.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:42:54.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "STMT.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\STMT.cs",
+              "RelativeDocumentMoniker": "STMT.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\STMT.cs",
+              "RelativeToolTip": "STMT.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:10:35.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Programm.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\Programm.cs",
+              "RelativeDocumentMoniker": "Programm.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\Programm.cs",
+              "RelativeToolTip": "Programm.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwCEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:08:34.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AbstractExpression.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\AbstractExpression.cs",
+              "RelativeDocumentMoniker": "AbstractExpression.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\AbstractExpression.cs",
+              "RelativeToolTip": "AbstractExpression.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:06:20.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ROBOTIKERN",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\ROBOTIKERN.csproj",
+              "RelativeDocumentMoniker": "ROBOTIKERN.csproj",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\ROBOTIKERN.csproj",
+              "RelativeToolTip": "ROBOTIKERN.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-26T11:04:05.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-26T11:03:52.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Viktor Reithofer\\source\\repos\\ROBOTIKERN\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAgwMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T11:03:50.182Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

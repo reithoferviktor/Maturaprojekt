@@ -1,0 +1,42 @@
+﻿using System.IO;
+using System.Windows;
+using LinqToDB;
+using OsterHasenHilfe.Data;
+
+namespace OsterHasenHilfe
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private string DbPath => Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "demo.db");
+
+        private void demo1_Click(object sender, RoutedEventArgs e)
+        {
+            using var db = new DemoDb(DbPath);
+            var values = db.Test1.Select(x => x.Anzahl).ToList();
+
+            output.Content = values.Count > 0
+                ? string.Join(", ", values)
+                : "Keine Einträge gefunden.";
+        }
+
+        private void btnHinzufuegen_Click(object sender, RoutedEventArgs e)
+        {
+            if (!int.TryParse(inputAnzahl.Text, out int anzahl))
+            {
+                output.Content = "Bitte eine gültige Zahl eingeben.";
+                return;
+            }
+
+            using var db = new DemoDb(DbPath);
+            db.InsertWithIdentity(new Models.Test1 { Anzahl = anzahl });
+
+            inputAnzahl.Clear();
+            output.Content = $"{anzahl} wurde hinzugefügt.";
+        }
+    }
+}

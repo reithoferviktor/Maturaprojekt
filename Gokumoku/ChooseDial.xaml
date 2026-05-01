@@ -1,0 +1,15 @@
+﻿<Window x:Class="Gokumoku.ChooseDial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gokumoku"
+        mc:Ignorable="d"
+        Title="ChooseDial" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="tb" HorizontalAlignment="Center" Margin="0,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="multiplayer" Content="multiplayer" HorizontalAlignment="Left" Margin="200,180,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="singleplayer" Content="singleplayer" HorizontalAlignment="Left" Margin="414,180,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

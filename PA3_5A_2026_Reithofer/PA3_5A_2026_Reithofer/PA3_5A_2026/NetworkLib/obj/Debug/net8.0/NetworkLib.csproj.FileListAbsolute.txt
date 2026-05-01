@@ -1,0 +1,11 @@
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\bin\Debug\net8.0\NetworkLib.deps.json
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\bin\Debug\net8.0\NetworkLib.dll
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\bin\Debug\net8.0\NetworkLib.pdb
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\obj\Debug\net8.0\NetworkLib.GeneratedMSBuildEditorConfig.editorconfig
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\obj\Debug\net8.0\NetworkLib.AssemblyInfoInputs.cache
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\obj\Debug\net8.0\NetworkLib.AssemblyInfo.cs
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\obj\Debug\net8.0\NetworkLib.csproj.CoreCompileInputs.cache
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\obj\Debug\net8.0\NetworkLib.dll
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\obj\Debug\net8.0\refint\NetworkLib.dll
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\obj\Debug\net8.0\NetworkLib.pdb
+Z:\PA3_5A_2026\PA3_5A_2026\NetworkLib\obj\Debug\net8.0\ref\NetworkLib.dll

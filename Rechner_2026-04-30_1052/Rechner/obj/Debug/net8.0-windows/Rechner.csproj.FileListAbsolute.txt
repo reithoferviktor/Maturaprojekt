@@ -1,0 +1,48 @@
+C:\Users\schna\source\repos\Rechner\Rechner\bin\Debug\net8.0-windows\Rechner.exe
+C:\Users\schna\source\repos\Rechner\Rechner\bin\Debug\net8.0-windows\Rechner.deps.json
+C:\Users\schna\source\repos\Rechner\Rechner\bin\Debug\net8.0-windows\Rechner.runtimeconfig.json
+C:\Users\schna\source\repos\Rechner\Rechner\bin\Debug\net8.0-windows\Rechner.dll
+C:\Users\schna\source\repos\Rechner\Rechner\bin\Debug\net8.0-windows\Rechner.pdb
+C:\Users\schna\source\repos\Rechner\Rechner\bin\Debug\net8.0-windows\NetworkLib.dll
+C:\Users\schna\source\repos\Rechner\Rechner\bin\Debug\net8.0-windows\NetworkLib.pdb
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.csproj.AssemblyReference.cache
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner_MarkupCompile.cache
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner_MarkupCompile.lref
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.g.resources
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.AssemblyInfoInputs.cache
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.AssemblyInfo.cs
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.csproj.CoreCompileInputs.cache
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.csproj.Up2Date
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.dll
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\refint\Rechner.dll
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.pdb
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\Rechner.genruntimeconfig.cache
+C:\Users\schna\source\repos\Rechner\Rechner\obj\Debug\net8.0-windows\ref\Rechner.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\bin\Debug\net8.0-windows\Rechner.exe
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\bin\Debug\net8.0-windows\Rechner.deps.json
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\bin\Debug\net8.0-windows\Rechner.runtimeconfig.json
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\bin\Debug\net8.0-windows\Rechner.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\bin\Debug\net8.0-windows\Rechner.pdb
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\bin\Debug\net8.0-windows\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\bin\Debug\net8.0-windows\NetworkLib.pdb
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.csproj.AssemblyReference.cache
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner_MarkupCompile.cache
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner_MarkupCompile.lref
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.g.resources
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.AssemblyInfoInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.AssemblyInfo.cs
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.csproj.CoreCompileInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.csproj.Up2Date
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\refint\Rechner.dll
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.pdb
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\Rechner.genruntimeconfig.cache
+C:\Users\Viktor Reithofer\Downloads\Rechner_2026-04-30_1052\Rechner\obj\Debug\net8.0-windows\ref\Rechner.dll

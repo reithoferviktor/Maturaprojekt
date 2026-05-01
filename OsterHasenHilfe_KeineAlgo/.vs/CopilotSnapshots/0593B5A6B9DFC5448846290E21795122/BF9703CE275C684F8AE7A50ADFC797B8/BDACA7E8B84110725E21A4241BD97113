@@ -1,0 +1,18 @@
+﻿using LinqToDB;
+using LinqToDB.Data;
+using LinqToDB.DataProvider.SQLite;
+using OsterHasenHilfe.Models;
+
+namespace OsterHasenHilfe.Data
+{
+    public class DemoDb : DataConnection
+    {
+        public DemoDb(string dbPath)
+            : base(SQLiteTools.GetDataProvider(), $"Data Source={dbPath}")
+        {
+        }
+
+        public ITable<Test1> Test1 => this.GetTable<Test1>();
+    }
+}
+

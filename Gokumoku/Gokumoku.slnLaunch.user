@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Neues Profil",
+    "Projects": [
+      {
+        "Path": "Gokumoku.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\Gomoku\\SERVER\\SERVER.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

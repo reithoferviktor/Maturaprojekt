@@ -1,0 +1,27 @@
+﻿using System.IO;
+using System.Windows;
+using LinqToDB;
+using OsterHasenHilfe.Data;
+
+namespace OsterHasenHilfe
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void demo1_Click(object sender, RoutedEventArgs e)
+        {
+            string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "demo.db");
+
+            using var db = new DemoDb(dbPath);
+            var values = db.Test1.Select(x => x.Anzahl).ToList();
+
+            output.Content = values.Count > 0
+                ? string.Join(", ", values)
+                : "Keine Einträge gefunden.";
+        }
+    }
+}

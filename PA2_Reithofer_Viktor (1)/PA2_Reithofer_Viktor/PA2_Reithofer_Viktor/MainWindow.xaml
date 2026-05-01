@@ -1,0 +1,51 @@
+﻿<Window x:Class="PA2_Reithofer_Viktor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PA2_Reithofer_Viktor"
+        mc:Ignorable="d"
+        xmlns:rs="clr-namespace:Painter;assembly=Painter"
+
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+      
+            </ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <rs:PainterControl Grid.Column="0" Grid.RowSpan="4" Grid.Row="0" x:Name="zeicher"></rs:PainterControl>
+        <TextBlock Grid.Row="0"  FontWeight="Bold" Margin="0,0,0,5" Grid.Column="1" Text="Robot Code:"></TextBlock>
+
+        <!-- Code-Eingabe -->
+        <TextBox Grid.Row="1" 
+          x:Name="txtCode" 
+          AcceptsReturn="True" 
+          AcceptsTab="True"
+          VerticalScrollBarVisibility="Auto"
+          HorizontalScrollBarVisibility="Auto"
+          FontFamily="Consolas"
+          FontSize="14"
+          Grid.Column="1"></TextBox>
+
+
+
+        <!-- Run Button -->
+        <Button Grid.Row="3" 
+         x:Name="btnRun" 
+         Content="▶ Run" 
+         Height="40" 
+         FontSize="16"
+         FontWeight="Bold"
+         Background="#4CAF50"
+         Foreground="White"
+         Grid.Column="1" Click="btnRun_Click"></Button>
+    </Grid>
+</Window>

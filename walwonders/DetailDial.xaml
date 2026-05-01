@@ -1,0 +1,35 @@
+﻿<Window x:Class="walwonders.DetailDial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:walwonders"
+        mc:Ignorable="d"
+        Title="DetailDial" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="nlbl" Grid.Row="0" Grid.Column="0"></Label>
+        <TextBlock x:Name="dlbl" Grid.Row="0" Grid.Column="1"></TextBlock>
+        <Label x:Name="latlbl" Grid.Row="1" Grid.Column="0"></Label>
+        <Label x:Name="Lonlbl" Grid.Row="2" Grid.Column="0"></Label>
+        <Label x:Name="tlbl" Grid.Row="3" Grid.Column="0"></Label>
+        <ListBox Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" ItemsSource="{Binding Path=Obs}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding Path=bitmapSource}"></Image>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+    </Grid>
+</Window>
