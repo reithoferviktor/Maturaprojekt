@@ -1,0 +1,33 @@
+<Window x:Class="AnimSkript.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AnimSkript" Height="700" Width="1100">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="120"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="txtCode" Grid.Column="0" Grid.Row="0"
+                 AcceptsReturn="True" AcceptsTab="True"
+                 FontFamily="Consolas" FontSize="13"
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 Margin="6"/>
+
+        <Button x:Name="btnRun" Grid.Column="0" Grid.Row="1" Content="Run"
+                Margin="6" Padding="20,4" HorizontalAlignment="Right"
+                Click="btnRun_Click"/>
+
+        <ListBox x:Name="lbErrors" Grid.Column="0" Grid.Row="2"
+                 Margin="6" Foreground="DarkRed" FontFamily="Consolas"/>
+
+        <Canvas x:Name="canvas" Grid.Column="1" Grid.RowSpan="3"
+                Background="#F8F8F2" Margin="6"/>
+    </Grid>
+</Window>

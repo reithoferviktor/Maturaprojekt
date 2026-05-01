@@ -1,331 +1,334 @@
-# Matura-Test Informatik — 5. Jahrgang
+# Matura — Praktische Arbeit
 
-**Dauer:** 5 Stunden (240 min Praxis + 60 min Theorie)
-**Hilfsmittel:** Visual Studio (offline), Microsoft-Doku (offline), eigene Code-Sammlung
-**Erlaubt:** Internet **nein**, KI-Tools **nein**, eigene Notizen **ja**
-**Punkte gesamt:** 100 (80 Praxis / 20 Theorie)
+**Dauer:** 5 Stunden (4h Praxis + 1h Theorie)
+**Hilfsmittel:** Visual Studio offline, NuGet-Pakete (offline-Cache), eigene Notizen / Code-Sammlung
+**Nicht erlaubt:** Internet, KI-Tools
+
+| Aufgabe | Punkte |
+|---|---:|
+| 1. AnimSkript |  / 35 |
+| 2. RoutenPlaner |  / 35 |
+| 3. Theorie |  / 30 |
+| **Gesamt** |  / 100 |
+
+| Punkte | Note |
+|---|---:|
+| 0 – 50 | 5 |
+| 51 – 63 | 4 |
+| 64 – 75 | 3 |
+| 76 – 88 | 2 |
+| 89 – 100 | 1 |
+
+Die Aufgaben können in beliebiger Reihenfolge bearbeitet werden. Schreib deinen Namen auf jedes Blatt und in jede Solution (`README.txt`).
 
 ---
 
-## Übersicht
+# Aufgabe 1 — AnimSkript (35 P)
 
-| Teil | Inhalt | Zeit | Punkte |
-|---|---|---:|---:|
-| Aufgabe 1 | TableScript — DSL für berechnete Tabellen | 120 min | 40 |
-| Aufgabe 2 | TourPlaner — Client-Server mit Algorithmen | 120 min | 40 |
-| Theorie A | UML & Architektur | ~25 min | 7 |
-| Theorie B | Algorithmen & Komplexität | ~20 min | 7 |
-| Theorie C | Parser & Grammatik | ~10 min | 4 |
-| Theorie D | Netzwerk & Datenformate | ~5 min | 2 |
+## Ziel
 
-**Bestehensgrenze:** 50 Punkte. Die Aufgaben sind unabhängig voneinander und können in beliebiger Reihenfolge bearbeitet werden.
+Du sollst einen kleinen Interpreter für die Sprache **AnimSkript** programmieren. AnimSkript zeichnet einen farbigen Linienzug auf einem WPF-Canvas. Der Quelltext wird in einer TextBox eingegeben, mit einem Klick auf "Run" tokenisiert, geparst und ausgeführt.
 
----
-
-# Aufgabe 1 — TableScript (40 Punkte)
-
-## Szenario
-
-Du sollst einen kleinen Interpreter für eine selbst definierte Sprache namens **TableScript** schreiben. TableScript erlaubt es Benutzer:innen, eine Tabelle mit Spalten und Zeilen zu definieren, Spalten anzulegen, deren Inhalt aus einer Formel berechnet wird, und einfache Aggregate auf den Spaltenwerten auszuführen. Das Ergebnis wird in einer WPF-Oberfläche als Tabelle angezeigt.
-
-## Beispielprogramm (Eingabe)
+## Beispielprogramm
 
 ```
-TABLE "Bestellung"
+POSITION 100 100
+FARBE Blau
+DICKE 2
 
-COLUMN Produkt   TEXT
-COLUMN Menge     ZAHL
-COLUMN Preis     ZAHL
-COLUMN Gesamt    FORMEL Menge * Preis
-COLUMN MitMwSt   FORMEL Gesamt * (1 + 0,2)
+WIEDERHOLE 4 MAL {
+    BEWEGE 60 0
+    BEWEGE 0 60
+    BEWEGE -60 0
+    BEWEGE 0 -60
+}
 
-ROW "Brot",  3, 2,50
-ROW "Milch", 2, 1,80
-ROW "Kaese", 1, 6,00
-
-SUMME Gesamt
-MITTEL Menge
-
-ZEIGE
+WENN POSX > 200 DANN {
+    FARBE Rot
+    BEWEGE 0 100
+}
 ```
 
-## Erwartetes Ergebnis
+Erwartetes Ergebnis: ein blauer Quadratstapel ausgehend von (100, 100), gefolgt von einer roten Senkrechten, falls die aktuelle X-Position > 200 ist.
 
-Wenn obiger Code im Code-Eingabefeld steht und der Run-Button gedrückt wird, erscheint im Ausgabe-Bereich:
-
-```
-Bestellung
-+---------+-------+-------+--------+----------+
-| Produkt | Menge | Preis | Gesamt | MitMwSt  |
-+---------+-------+-------+--------+----------+
-| Brot    |   3   | 2,50  |  7,50  |   9,00   |
-| Milch   |   2   | 1,80  |  3,60  |   4,32   |
-| Kaese   |   1   | 6,00  |  6,00  |   7,20   |
-+---------+-------+-------+--------+----------+
-SUMME(Gesamt) = 17,10
-MITTEL(Menge) = 2,00
-```
-
-(Die ASCII-Tabelle ist nur eine Veranschaulichung — eine WPF-DataGrid-Darstellung ist gewünscht.)
-
-## Sprachelemente von TableScript
+## Sprachelemente
 
 | Element | Beschreibung |
 |---|---|
-| `TABLE "name"` | Setzt den Tabellennamen (genau einmal pro Programm). |
-| `COLUMN <name> TEXT` | Definiert eine Textspalte. |
-| `COLUMN <name> ZAHL` | Definiert eine Zahlenspalte. |
-| `COLUMN <name> FORMEL <ausdruck>` | Definiert eine berechnete Spalte; der Ausdruck wird pro Zeile ausgewertet. |
-| `ROW <wert>, <wert>, ...` | Eine Zeile mit Werten in der Reihenfolge der TEXT/ZAHL-Spalten (Formelspalten werden übersprungen). |
-| `SUMME <spalte>` | Summe einer Zahlen- oder Formelspalte. |
-| `MITTEL <spalte>` | Arithmetisches Mittel einer Zahlen- oder Formelspalte. |
-| `ZEIGE` | Zeichnet die Tabelle samt Aggregaten in der UI. |
+| `POSITION x y` | Setzt die aktuelle Cursor-Position. **Kein Strich** wird gezeichnet. |
+| `BEWEGE dx dy` | Bewegt den Cursor relativ um `(dx, dy)` und zeichnet dabei einen **Strich** in aktueller Farbe und Dicke. |
+| `FARBE name` | Setzt die aktuelle Stiftfarbe. Erlaubt: `Schwarz`, `Rot`, `Gruen`, `Blau`, `Gelb`. |
+| `DICKE n` | Setzt die aktuelle Stiftdicke (1 ≤ n ≤ 10). |
+| `WIEDERHOLE n MAL { ... }` | Wiederholt den Block n-mal. |
+| `WENN <vergleich> DANN { ... }` | Bedingte Ausführung. Optional mit `SONST { ... }`. |
+| `<vergleich>` | `POSX`, `POSY` oder `SCHRITT` `<` / `>` / `==` zahl |
 
-### Formel-Ausdrücke
+`SCHRITT` ist die Anzahl der bisher ausgeführten `BEWEGE`-Anweisungen.
 
-- Vier Grundrechenarten: `+`, `-`, `*`, `/`
-- Klammerung mit `(` und `)`
-- Operator-Precedence: `*` und `/` binden stärker als `+` und `-`
-- Zahlenliterale mit Komma als Dezimaltrennzeichen (`0,2` ist gültig, `0.2` nicht)
-- Bezüge auf andere Spalten per Spaltenname (Groß-/Kleinschreibung beachtet)
-- Ein Formel-Ausdruck kann sich auch auf eine andere Formel-Spalte beziehen (siehe `MitMwSt` → `Gesamt`)
+Schlüsselwörter sind GROSS geschrieben. Zahlen sind ganze Zahlen (positiv oder mit Vorzeichen `-`). Beliebig viele Leerzeilen / Spaces / Tabs sind erlaubt.
 
-### Sonstige Regeln
+## Im Angabeprojekt vorhanden
 
-- Strings stehen immer in doppelten Anführungszeichen.
-- Mehrere Leerzeilen und beliebig viele Spaces/Tabs sind erlaubt.
-- Schlüsselwörter (`TABLE`, `COLUMN`, ...) sind GROSS geschrieben.
+In `Angabeprojekt_AnimSkript/` findest du:
+- Funktionsfähige WPF-Oberfläche (Code-TextBox, Run-Button, Canvas, Fehler-ListBox)
+- Klasse `Token` mit `TokenType`-Enum (alle Typen vorgegeben)
+- Abstrakte Klasse `Expression` mit `Parse(...)` und `Run(...)`-Signatur
+- Klasse `Programm`-Stub
+- Eine `Stiftzustand`-Klasse (Position / Farbe / Dicke / Schrittzähler) — fertig
+- Eine `Zeichner`-Klasse, die ein `Stiftzustand`-Objekt + Canvas zum Zeichnen einer Linie verwendet — fertig
+- Stubs werfen `NotImplementedException`
 
-## Anforderungen an die Lösung
+## Teilaufgaben
 
-| # | Anforderung | Punkte |
-|--:|---|--:|
-| 1 | Tokenisierung des Eingabetextes in eine geeignete Token-Liste | 6 |
-| 2 | Parser, der die sieben Anweisungstypen (`TABLE`, `COLUMN`, `ROW`, `SUMME`, `MITTEL`, `ZEIGE`) korrekt unterscheidet | 8 |
-| 3 | Auswertung von `FORMEL`-Ausdrücken inkl. korrekter Operator-Precedence und Klammerung | 8 |
-| 4 | Bezüge auf andere Spalten (auch Formelspalten) funktionieren | 4 |
-| 5 | Anzeige der Tabelle in einer WPF-DataGrid (oder gleichwertig) mit allen Spalten | 6 |
-| 6 | `SUMME`/`MITTEL` werden korrekt berechnet und unterhalb der Tabelle angezeigt | 4 |
-| 7 | Mindestens drei verschiedene Fehlertypen werden erkannt und in einer Fehlerliste positioniert angezeigt (z. B. unbekannter Spaltenname, fehlende `)`, Typmismatch in `ROW`); das Programm darf in keinem Fall abstürzen | 4 |
+### 1. Tokenizer (6 P)
 
-## Eingabedateien zum Testen
+Im `MainWindow.xaml.cs` findest du `private void btnRun_Click(...)`. Befülle dort die `tokens`-Liste, indem du den Quelltext analysierst und für jedes erkannte Token einen `Token` mit korrektem `TokenType` und `Value` erzeugst.
 
-Es gibt **keine** vorgegebenen Inputdateien — du schreibst den Test-Eingabetext direkt in das Code-Eingabefeld deines Programms.
+Erwartetes Verhalten:
+- Alle Schlüsselwörter werden als entsprechende `TokenType` erkannt
+- Ganzzahlen (auch mit führendem `-`) werden als `Number` erkannt
+- Geschweifte Klammern `{` und `}` werden als `LKL` / `RKL` erkannt
+- Unbekannte Zeichenketten erzeugen einen `Error`-Token, der **nicht** zum Absturz führt, sondern in der Fehler-ListBox angezeigt wird
 
-## Abgabe
+### 2. Programm- und Statement-Parser (12 P)
 
-- Vollständige Visual-Studio-Solution im Ordner `Abgabe/Aufgabe1/<deinName>/`
-- Zip-Datei der Solution (ohne `bin`/`obj`)
-- Das Projekt **muss** kompilieren und ausführbar sein
+Die Klasse `Programm` parst den vollständigen Quelltext, indem sie wiederholt eine konkrete Statement-Klasse für jeden Anweisungstyp aus dem Token-Strom liest. Implementiere folgende Statement-Klassen (Vorschlag, eigene Namen erlaubt):
 
----
+- `PositionStmt`, `BewegeStmt`, `FarbeStmt`, `DickeStmt`
+- `WiederholeStmt`, `WennStmt`
 
-# Aufgabe 2 — TourPlaner (40 Punkte)
+Erwartetes Verhalten:
+- Jede Statement-Klasse erbt von `Expression`
+- `Parse(...)` zieht die zugehörigen Tokens vom Anfang der Liste
+- `Run(...)` führt die Aktion am übergebenen `Stiftzustand` / `Zeichner` aus
+- Verschachtelte Blöcke (`WIEDERHOLE`, `WENN`, `SONST`) werden korrekt rekursiv geparst
 
-## Szenario
+### 3. Vergleichsausdruck und WENN/SONST (5 P)
 
-Du erweiterst eine vorgegebene Reiseplanungs-Anwendung um drei algorithmische Operationen, die über ein TCP-Netzwerk angefragt werden können. Der **Server** kennt eine Menge von Sehenswürdigkeiten ("POIs") sowie die Verbindungen zwischen ihnen. Der **Client** stellt diese auf einem Canvas dar und fragt drei Operationen beim Server an.
+Implementiere einen einfachen Vergleichsausdruck (`POSX`/`POSY`/`SCHRITT` Operator Zahl), der zur Laufzeit den aktuellen Wert aus dem `Stiftzustand` liest und einen `bool` zurückgibt. Die `WennStmt` führt je nach Ergebnis den DANN- oder SONST-Block aus.
 
-## Starter-Projekt
+### 4. Auswertung mit Canvas-Ausgabe (8 P)
 
-Im Angabeprojekt `Angabeprojekt_TourPlaner/` findest du eine vorbereitete Visual-Studio-Solution mit drei Projekten:
+Wenn alle Statements geparst sind, ruft `btnRun_Click` `programm.Run(...)` auf. Erwartet:
+- Das Canvas wird vor jedem Run **geleert**
+- Jede `BEWEGE`-Anweisung zeichnet eine `Line` mit aktueller Farbe + Dicke
+- `POSITION` ändert nur die Cursor-Position, ohne Strich
+- `WIEDERHOLE` führt seinen Block n-mal aus
+- `WENN` evaluiert den Vergleich und führt den passenden Block aus
 
-- `NetworkLib/` — fertige TCP-Kommunikation (`Transfer`, `MSG`, `IReceiver`)
-- `Server/` — Server mit fertigem CSV-Loader; **Stubs** für die drei Algorithmen
-- `Client/` — WPF-UI mit fertigem Canvas-Rendering der POIs; **Stubs** für die drei Aktionen
+### 5. Fehlerbehandlung (4 P)
 
-Die Algorithmen-Klassen (`DijkstraSolver`, `KMeansSolver`, `PermutationsTourSolver`) sowie die drei Operations-Handler im Server-Receiver werfen aktuell `NotImplementedException` — das ist deine Aufgabe.
-
-## Datenbasis (`data/pois.csv`, `data/verbindungen.csv`)
-
-Beide Dateien werden vom Server beim Start geladen. Format mit Semikolon-Trennzeichen:
-
-```
-# pois.csv
-Id;Name;Kategorie;X;Y
-1;Stephansdom;Sehenswuerdigkeit;520;310
-2;Hofburg;Sehenswuerdigkeit;480;330
-...
-
-# verbindungen.csv
-VonId;NachId;Distanz
-1;2;120
-2;3;90
-...
-```
-
-Die Verbindungen sind ungerichtet (eine Zeile gilt in beide Richtungen).
-
-## Drei Operationen, die der Client anfordert
-
-### Operation 1 — Kürzester Pfad (Dijkstra)
-
-**Anfrage:** Client wählt zwei POIs (Start und Ziel) per ComboBox und drückt "Pfad anzeigen".
-**Server:** Berechnet mit dem Dijkstra-Algorithmus den kürzesten Pfad im POI-Graph.
-**Antwort:** Liste der POI-IDs auf dem Pfad in Reihenfolge + Gesamtdistanz.
-**Visualisierung:** Der Pfad wird im Canvas in **Rot** hervorgehoben, die Gesamtdistanz wird in einem Textfeld angezeigt.
-
-### Operation 2 — Clustern (K-Means)
-
-**Anfrage:** Client gibt eine Zahl `k` (z. B. 3) ein und drückt "Clustern".
-**Server:** Gruppiert alle POIs anhand ihrer X/Y-Koordinaten in `k` Cluster mit dem K-Means-Algorithmus.
-**Antwort:** Pro POI die zugewiesene Cluster-Nummer (0 bis k-1).
-**Visualisierung:** Die POIs werden im Canvas in **k unterschiedlichen Farben** dargestellt (je Cluster eine Farbe).
-
-### Operation 3 — Beste Reihenfolge (Permutationsgenerator)
-
-**Anfrage:** Client wählt mit Mehrfach-Auswahl einige POIs (max. 8) aus und drückt "Beste Tour".
-**Server:** Erzeugt mit einem **selbst geschriebenen** Permutationsgenerator alle Reihenfolgen, in denen die ausgewählten POIs besucht werden können (der erste übergebene POI bleibt als Startpunkt fix), und sucht die mit der **kleinsten Gesamtdistanz** entlang der vorhandenen Verbindungen. Es werden also Pfad-Distanzen aus dem Graph aufsummiert (nicht Luftlinie). Wenn zwischen zwei POIs in der gewählten Reihenfolge kein Pfad existiert, ist diese Permutation ungültig.
-**Antwort:** Beste gefundene Reihenfolge der POI-IDs + Gesamtdistanz.
-**Visualisierung:** Die ausgewählten POIs werden im Canvas mit **fortlaufender Nummerierung** (1, 2, 3, ...) beschriftet, die Tour-Linie wird in **Blau** gezeichnet.
-
-## Anforderungen an die Lösung
-
-| # | Anforderung | Punkte |
-|--:|---|--:|
-| 1 | Server lädt CSVs, lauscht auf TCP-Port, loggt Anfragen | 4 |
-| 2 | Operation 1 — Dijkstra korrekt implementiert (PriorityQueue oder gleichwertig) | 9 |
-| 3 | Operation 1 — Visualisierung des Pfads im Canvas | 3 |
-| 4 | Operation 2 — K-Means korrekt implementiert (Iterations-Logik mit Konvergenz/Iterationsobergrenze) | 8 |
-| 5 | Operation 2 — Cluster-Färbung im Canvas | 2 |
-| 6 | Operation 3 — Eigener Permutationsgenerator (rekursiv oder iterativ, **nicht** über LINQ-Bibliothek) | 6 |
-| 7 | Operation 3 — Tour-Visualisierung mit Nummerierung | 3 |
-| 8 | Robustheit: Ungültige Anfragen (unbekannte ID, keine Verbindung, k=0) → Fehler-Antwort, kein Crash | 3 |
-| 9 | Zwei Clients können parallel verbunden sein und unabhängig Anfragen stellen | 2 |
-
-## Hinweise
-
-- Du darfst die Datenformate der `MSG`-Klasse erweitern, aber das bestehende Schema bleibt: ein `MSG`-Typ pro Anfrage- und Antwort-Variante.
-- Die Visualisierung muss bei jeder neuen Anfrage von vorherigen Markierungen "aufgeräumt" werden.
-- Der Permutationsgenerator soll generisch eine Liste übergeben bekommen und alle N! Reihenfolgen erzeugen können — die Beschränkung auf den fixen Startpunkt erledigt der Aufrufer.
-
-## Abgabe
-
-- Erweiterte Visual-Studio-Solution im Ordner `Abgabe/Aufgabe2/<deinName>/`
-- Zip-Datei der Solution (ohne `bin`/`obj`, **mit** `data/`-Ordner)
-- Das Projekt **muss** kompilieren und ausführbar sein
-- In der Solution starten: zuerst Server, dann Client (gerne auch zwei Clients)
+Mind. drei verschiedene Fehlertypen werden in der Fehler-ListBox angezeigt, ohne dass das Programm abstürzt:
+- Tokenisierungsfehler (unbekanntes Zeichen)
+- Parser-Fehler (z. B. Zahl erwartet, fehlende `{`)
+- Laufzeitfehler (z. B. unbekannte Farbe)
 
 ---
 
-# Theorieteil (20 Punkte, 60 Minuten)
+# Aufgabe 2 — RoutenPlaner (35 P)
 
-> Bearbeite die Theorie auf einem **separaten Blatt**. Bezüge auf deine eigenen Aufgaben (1 oder 2) sind ausdrücklich erwünscht und werden positiv bewertet.
+## Ziel
 
----
+Du erweiterst eine vorgegebene Client-Server-Anwendung. Der **Server** kennt ein Stationsnetz (Stationen + Verbindungen) und beantwortet zwei algorithmische Anfragen:
+- **Kürzester Pfad** zwischen 2 Stationen (Dijkstra)
+- **Beste Tour** über bis zu 6 ausgewählte Stationen (Permutationsgenerator + Pfadlängen)
 
-## Block A — UML & Architektur (7 Punkte)
+Der **Client** zeigt das Netz auf einem Canvas und erlaubt es, Pfade/Touren anzufragen sowie das Ergebnis lokal in einer SQLite-Datenbank zu speichern und wieder zu laden.
 
-### Frage 1 — Klassendiagramm zu Aufgabe 1 (3 P)
+## Im Angabeprojekt vorhanden
 
-Zeichne ein UML-Klassendiagramm der Parser-Hierarchie deines TableScripts. Es sollen mindestens enthalten sein:
+In `Angabeprojekt_RoutenPlaner/` findest du eine fertige Solution mit drei Projekten:
 
-- die abstrakte Basisklasse für Statements,
-- mindestens vier konkrete Statement-Klassen,
-- die Hierarchie der Formel-Auswertung (Precedence-Klassen, mind. zwei Ebenen),
-- Beziehungen (Vererbung, Aggregation, Komposition) korrekt eingezeichnet,
-- die wichtigsten Felder und Methoden mit Sichtbarkeit (`+`, `-`, `#`).
+- **`NetworkLib/`** — Klassen `Transfer`, `MSG` (Enum `MsgType`, alle Felder), `Receiver`-Interface. Komplett fertig.
+- **`Server/`** — Konsolen-App mit fertigem `TcpListener`, fertiger Stations-/Verbindungsdatensammlung (im Code) und einem `ServerReceiver`, der eingehende `MSG`s entgegennimmt. Methoden `BerechneKuerzestenPfad(...)` und `BerechneBesteTour(...)` werfen `NotImplementedException`.
+- **`Client/`** — WPF-App mit fertigem Canvas-Rendering der Stationen + Verbindungen, fertigen ComboBoxen, ListBox, Buttons (Click-Handler werfen `NotImplementedException`). linq2db-Models `RouteEintrag` und `RoutenDb` sind vorhanden, ebenso die SQLite-DB `routen.db`.
 
-### Frage 2 — Sequenzdiagramm zu Aufgabe 2 (3 P)
+NuGet-Pakete `linq2db` (6.2.1) und `Microsoft.Data.Sqlite` (10.0.7) sind im Client referenziert.
 
-Zeichne ein UML-Sequenzdiagramm für eine **"Beste Tour"**-Anfrage. Beteiligte Komponenten:
+## Teilaufgaben
 
-- Benutzer:in / Client-UI,
-- Client-`Transfer`,
-- Server-`Transfer` (bzw. Server-Receiver),
-- `PermutationsTourSolver`.
+### 1. Verbindung zum Server (4 P)
 
-Zeige die zeitliche Abfolge inklusive Antwort-Pfad zurück zur UI.
+Im Client gibt es einen Button **"Verbinden"** mit Click-Handler `btnVerbinden_Click`. Befülle ihn:
+- TCP-Verbindung zum Server (Default `127.0.0.1:5050`) öffnen
+- `Transfer` instanziieren, `Start()` aufrufen
+- Eine `MSG` mit `MsgType.InitRequest` senden
+- Statustext aktualisieren
 
-### Frage 3 — Architekturvergleich (1 P)
+### 2. Stationen befüllen (4 P)
 
-Erkläre in 4–6 Sätzen, warum für Aufgabe 2 eine Client-Server-Architektur sinnvoll ist, obwohl die ganze Anwendung auch in einem einzigen Programm laufen könnte. Nenne mindestens **zwei Vorteile** und **einen Nachteil**.
+Wenn der Server eine `MSG` mit `MsgType.InitAnswer` schickt, übernimm die Stationen + Verbindungen in den Client und ruf die fertige Methode `Redraw()` auf. Sobald die Listen befüllt sind:
+- ComboBoxen `cbVon` und `cbNach` mit allen Stationen befüllen
+- ListBox `lbTour` mit allen Stationen befüllen (für Mehrfach-Auswahl)
 
----
+### 3. Kürzester Pfad — Dijkstra (9 P)
 
-## Block B — Algorithmen & Komplexität (7 Punkte)
+Im **Server** implementiere die Methode `DijkstraSolver.Solve(int vonId, int nachId)`. Erwartet wird:
+- Korrekte Implementierung mit Prioritätswarteschlange (`PriorityQueue<,>`) oder gleichwertiger Struktur
+- Rückgabe: `(List<int> path, double total)` mit allen IDs in Reihenfolge und der Gesamtdistanz
+- Falls kein Pfad existiert: Rückgabe einer leeren Liste, Distanz `double.PositiveInfinity`
 
-### Frage 4 — Dijkstra-Trockenlauf (2 P)
+Im **Client** befülle den Click-Handler `btnPfad_Click`:
+- Sendet `MSG` mit `MsgType.PathRequest`, `FromId` / `ToId` aus den ComboBoxen
+- Beim Empfang von `MsgType.PathAnswer`: Pfad **rot** auf dem Canvas hervorheben (Linien zwischen den IDs), Distanz im Statustext
 
-Gegeben ist folgender Graph:
+### 4. Beste Tour — Permutationen (8 P)
 
-```
-        (4)
-   A ────────── B
-   │           ╱│
- (2)│       (1) │(5)
-   │      ╱     │
-   D ────────── C
-        (3)
-   │
- (7)│
-   │
-   E ──────────  (Verbindung E-C mit Gewicht 6)
-        (6)
-```
+Im **Server** implementiere `PermutationenSolver.Solve(List<int> ausgewaehlteIds)`. Erwartet:
+- **Eigener** Permutationsgenerator (rekursiv oder iterativ), **nicht** über LINQ-Bibliothek
+- Erste übergebene ID ist der **fixe Startpunkt** der Tour
+- Pro Permutation wird die Summe der Pfadlängen (Dijkstra zwischen aufeinanderfolgenden Stationen) gebildet
+- Rückgabe: `(List<int> ordnung, double total)` mit der besten gefundenen Reihenfolge
 
-**Kantenliste:** A–B(4), A–D(2), B–C(5), B–D(1), D–C(3), D–E(7), C–E(6)
+Im **Client** befülle `btnTour_Click`:
+- Liest die ausgewählten IDs aus `lbTour` (max. 6, sonst Fehlertext)
+- Sendet `MSG` mit `MsgType.TourRequest`
+- Beim Empfang von `MsgType.TourAnswer`: Tour **blau** zeichnen, Stationen **fortlaufend nummerieren** (1, 2, 3, ...), Gesamtdistanz im Statustext
 
-Führe Dijkstra vom Knoten **A** aus per Hand durch und trage in eine Tabelle pro Iteration ein:
+### 5. Speichern in SQLite per linq2db (5 P)
 
-- welcher Knoten als nächstes finalisiert wird,
-- die aktuellen Distanzen zu allen Knoten,
-- den Vorgänger-Knoten jedes Knotens.
+Über das Menü **Route → Speichern**: Dialogfenster, das einen Namen abfragt, dann den aktuell angezeigten Pfad oder Tour mit `linq2db` in die Tabelle `RouteEintraege` speichert (`Id`, `Name`, `Typ` (Pfad / Tour), `StationsIds` (CSV-String), `Distanz`).
 
-### Frage 5 — K-Means in Worten (2 P)
+Erwartet:
+- Name darf nicht leer sein und nicht doppelt vorkommen → Fehlermeldung
+- Nach erfolgreichem Speichern: Statustext-Update + ListBox `lbGespeichert` aktualisieren
 
-Beschreibe in eigenen Worten (max. 10 Zeilen) den Ablauf des K-Means-Algorithmus, inklusive:
+### 6. Laden aus SQLite (3 P)
 
-- Initialisierung,
-- Iterationsschritte,
-- Abbruchbedingung,
-- **eine** Schwäche des Algorithmus.
+Über das Menü **Route → Laden**: Dialogfenster mit allen gespeicherten Routennamen aus der DB. Bei Auswahl wird die gespeicherte Route am Canvas wieder angezeigt (rot für Pfad, blau für Tour, Nummerierung), Distanz im Statustext.
 
-### Frage 6 — Permutationen — Komplexität (1 P)
+### 7. GUI-Vorlage (2 P)
 
-Wie viele Permutationen entstehen für **N = 6** POIs? Wie viele für **N = 10**? Begründe in einem Satz, warum die Aufgabe `N ≤ 8` auf 8 begrenzt ist.
+Diese Punkte gibt es für die korrekte Verwendung der vorgegebenen GUI-Elemente (Canvas, ListBox, ComboBoxen, Statustext, Menü). Wenn der Schüler eine völlig andere GUI baut, gibt es 0 Punkte für diesen Punkt — die vorgegebenen Steuerelemente sollen weiterverwendet werden.
 
-### Frage 7 — Pseudocode (2 P)
+## Pflichtprüfung (auch unabhängig von der Punkteverteilung)
 
-Schreibe Pseudocode für einen **rekursiven** Permutationsgenerator, der eine Liste von Elementen übergeben bekommt und alle möglichen Anordnungen erzeugt. Der Pseudocode soll keine Klassen-spezifischen C#-Konstrukte enthalten (`Permutiere(rest, prefix)` oder ähnlich).
-
----
-
-## Block C — Parser & Grammatik (4 Punkte)
-
-### Frage 8 — EBNF-Grammatik (2 P)
-
-Schreibe in EBNF die Grammatik für die `COLUMN`-Anweisung deines TableScripts (inklusive der Variante mit `FORMEL`). Verwende die Symbole `=`, `|`, `[ ]`, `{ }`, `( )` korrekt. Du darfst nicht-terminale Symbole wie `<Bezeichner>`, `<Zahl>`, `<Ausdruck>` voraussetzen — du musst sie nicht weiter definieren.
-
-### Frage 9 — Tokenisierung (1 P)
-
-Welche Tokens entstehen aus folgender TableScript-Zeile? Liste **pro Token** Typ und Wert auf:
-
-```
-COLUMN Gesamt FORMEL (Menge + 1) * Preis
-```
-
-### Frage 10 — Operator-Precedence (1 P)
-
-Warum reicht es nicht, die Tokens einer Formel einfach von links nach rechts auszuwerten? Begründe an einem **konkreten Beispielausdruck** aus TableScript und gib das Ergebnis bei naiver Auswertung sowie das mathematisch korrekte Ergebnis an.
+- [ ] Server startet, gibt Stationsliste auf der Konsole aus
+- [ ] Client verbindet sich, zeigt Stationen + Verbindungen
+- [ ] Pfad zwischen 2 Stationen wird korrekt berechnet und visualisiert
+- [ ] Tour über 4 Stationen wird korrekt berechnet, beste Reihenfolge nummeriert eingezeichnet
+- [ ] Speichern + Laden funktioniert mit SQLite-DB
 
 ---
 
-## Block D — Netzwerk & Datenformate (2 Punkte)
+# Aufgabe 3 — Theorie (30 P, ca. 60 min)
 
-### Frage 11 — TCP vs. UDP (1 P)
+> Bezüge auf deine eigenen Implementierungen aus Aufgabe 1 und Aufgabe 2 sind ausdrücklich erwünscht.
 
-Erkläre in maximal 4 Sätzen den zentralen Unterschied zwischen TCP und UDP und begründe, warum für die TourPlaner-Anwendung TCP gewählt wurde.
+## Block A — Programmiersprachen & Parser (8 P)
 
-### Frage 12 — Nachrichtenformat & Serialisierung (1 P)
+### A1. ABNF-Grammatik (3 P)
 
-Skizziere die Felder einer `MSG`-Klasse, die für **alle drei** Operationen (`KÜRZESTER_PFAD`, `CLUSTERN`, `BESTE_REIHENFOLGE`) sowie deren Antworten ausreicht. Begründe stichwortartig, warum du jedes Feld brauchst. Nenne anschließend ein **Serialisierungsformat** (z. B. XML oder JSON) mit je einem **Vor- und einem Nachteil**.
+Schreibe in **ABNF**-Notation die Grammatik der `WIEDERHOLE`-Anweisung deines AnimSkripts (inklusive der inneren Statements als Verweis auf `<Anweisung>`). Verwende `::=`, `|`, `{ }`, `[ ]`, `( )` korrekt.
+
+### A2. Chomsky-Hierarchie (2 P)
+
+In welche **Chomsky-Klasse** (Type 0/1/2/3) ordnest du:
+- die Tokenisierung deines AnimSkripts ein? Begründe.
+- die Statement-Grammatik deines AnimSkripts ein? Begründe.
+
+### A3. Tokenisierung (1 P)
+
+Welche Tokens entstehen aus folgender Zeile? Liste pro Token Typ und Wert auf:
+
+```
+WIEDERHOLE 4 MAL { BEWEGE -10 20 }
+```
+
+### A4. AST-Baum zu einem Beispielausdruck (2 P)
+
+Zeichne den AST (Syntaxbaum) für folgendes AnimSkript-Fragment:
+
+```
+WIEDERHOLE 3 MAL {
+    BEWEGE 10 0
+    WENN POSX > 50 DANN {
+        FARBE Rot
+    }
+}
+```
+
+## Block B — Graphentheorie & Algorithmen (10 P)
+
+### B1. Begriffe am Stationsnetz (3 P)
+
+Gegeben ist folgendes 6-Knoten-Stationsnetz (Skizze auf dem Angabezettel — Knoten A, B, C, D, E, F mit gewichteten Kanten):
+
+- **(½ P)** Wie hoch ist der **Grad** des Knotens C?
+- **(½ P)** Ist der Graph **bipartit**? Begründe.
+- **(½ P)** Welcher Knoten ist der **zentrale Knoten** des Graphen? (Definition: kleinster maximaler Abstand zu allen anderen Knoten)
+- **(½ P)** Welcher Knoten würde bei seinem Ausfall den Graphen in zwei Teilgraphen zerlegen? Begriff?
+- **(½ P)** Wie viele Kanten enthält der **aufspannende Baum** des Graphen mindestens?
+- **(½ P)** Erkläre den Unterschied zwischen einem **Weg**, einem **Kreis** und einem **Zyklus**.
+
+### B2. Dijkstra-Trockenlauf (4 P)
+
+Führe Dijkstra vom Knoten **A** aus dem Graphen aus B1 per Hand aus. Trage in eine Tabelle pro Iteration ein: welcher Knoten wird finalisiert, aktuelle Distanzen, Vorgänger.
+
+### B3. Permutationen — Komplexität (1 P)
+
+- Wie viele Permutationen entstehen für **N = 6**?
+- Wie viele für **N = 8**?
+- Begründe in einem Satz, warum die Aufgabe `N ≤ 6` auf 6 begrenzt ist.
+
+### B4. Pseudocode rekursiver Permutationsgenerator (2 P)
+
+Schreibe Pseudocode für einen **rekursiven** Permutationsgenerator, der eine Liste übergeben bekommt und alle Anordnungen mit fixiertem ersten Element erzeugt.
+
+## Block C — UML & Software-Pattern (8 P)
+
+### C1. Klassendiagramm zu Aufgabe 1 (4 P)
+
+Zeichne ein UML-Klassendiagramm der Parser-Hierarchie deines AnimSkripts. Mindestens enthalten:
+- Abstrakte Basisklasse `Expression`
+- Mind. 5 konkrete Statement-Klassen
+- Beziehung zu `WiederholeStmt` und `WennStmt` mit ihren Kindern (Composite-Pattern)
+- Sichtbarkeiten (`+`, `-`, `#`)
+
+### C2. Software-Pattern erkennen (3 P)
+
+Welche **Software-Pattern** finden sich in deinen Aufgaben? Nenne genau drei und ordne sie konkret zu:
+
+- Pattern 1 → wo in deinem Code? Was macht es?
+- Pattern 2 → wo? Was macht es?
+- Pattern 3 → wo? Was macht es?
+
+(Erlaubt: Composite, Interpreter, Observer, Singleton, Iterator, Factory.)
+
+### C3. UML-Beziehungstypen (1 P)
+
+Nenne und unterscheide kurz die folgenden UML-Beziehungstypen:
+- Aggregation
+- Komposition
+- Generalisation
+- Abhängigkeit (Dependency)
+
+## Block D — Netzwerk, ORM, Threads, XML (4 P)
+
+### D1. XML-Serialisierung — Regeln (2 P)
+
+Nenne **drei Regeln**, die eine Klasse erfüllen muss, damit sie mit `XmlSerializer` serialisiert werden kann. Was ist das **Polymorphie-Problem** bei XML-Serialisierung und wie löst man es typischerweise?
+
+### D2. Threads (1 P)
+
+Wie viele Threads laufen typischerweise:
+- in deinem Client (bei einer Verbindung)?
+- in deinem Server (bei zwei verbundenen Clients)?
+
+Begründe kurz, **warum** für jede TCP-Verbindung ein eigener Thread sinnvoll ist.
+
+### D3. ORM und Datenbinding (1 P)
+
+- Was bedeutet **ORM** und wozu wird es in Aufgabe 2 verwendet?
+- Wann brauche ich in WPF **Datenbinding**? Welche Schnittstelle muss eine Klasse implementieren, damit sich die UI bei Änderungen aktualisiert?
 
 ---
 
 # Allgemeine Hinweise
 
-- Schreib deinen **Namen** auf jedes abgegebene Blatt und in jede Solution (in einer `README.txt`).
-- Wenn du eine Aufgabe nicht vollständig schaffst, **dokumentiere kurz, was funktioniert und was nicht** — das gibt Teilpunkte.
-- Lieber eine kompakte, robuste Lösung als eine ambitionierte, die nicht kompiliert.
-- Viel Erfolg!
+- Beide Praxisaufgaben **müssen kompilieren**, ansonsten gibt es 0 Punkte für die jeweilige Aufgabe.
+- Wenn du eine Teilaufgabe nicht schaffst, **schreib in die `README.txt`** der Solution, was funktioniert und was nicht — das gibt Teilpunkte.
+- Lieber eine kleine, robuste Lösung als eine ambitionierte, die nicht läuft.
+- Schreib deinen Namen oben auf jedes Theorie-Blatt.
+
+**Viel Erfolg!**

@@ -1,147 +1,168 @@
 # Context — Übergabedokument für die Matura-Test-Erstellung
 
-> **Zweck dieses Dokuments:** Wenn der ursprüngliche Bearbeiter (z. B. wegen Token-/Zeit-Limits) die Arbeit nicht abschließen kann, muss ein Kollege ohne Vorwissen mit diesem Dokument **direkt weiterarbeiten** können.
+> **Zweck:** Wenn der ursprüngliche Bearbeiter wegen Token-Limits abbrechen muss, kann ein Kollege mit diesem Dokument **direkt weiterarbeiten**.
 
 ---
 
 ## 1. Was wird gebaut?
 
-Eine vollständige **Matura-Prüfungsangabe** für einen 5h-Test (4h Praxis + 1h Theorie) für eine HTL-Informatik-Klasse.
+Eine **Matura-Prüfungsangabe** für eine HTL-Informatik-Klasse, 5h gesamt.
 
-- **Aufgabe 1 (Praxis, 2h):** TableScript — eine kleine DSL für berechnete Tabellen (Lexer + Parser + Auswertung + WPF-UI)
-- **Aufgabe 2 (Praxis, 2h):** TourPlaner — TCP Client-Server-Anwendung mit Dijkstra, K-Means und Permutationsgenerator
-- **Theorie (1h):** 13 Fragen zu UML, Algorithmen, Parser-Theorie, Netzwerk
+- **Aufgabe 1 (Praxis, ~2h, 35 P):** AnimSkript — kleine DSL für eine Punktanimation auf Canvas, klassischer AST-Parser
+- **Aufgabe 2 (Praxis, ~2h, 35 P):** RoutenPlaner — Client-Server-Anwendung mit Dijkstra + Permutationsgenerator + linq2db (SQLite)
+- **Theorie (1h, 30 P):** auf das **POS-Theorie-Skript** abgestimmt (ABNF, Chomsky, Graphentheorie, UML, Software-Pattern, XML/Threads/ORM)
 
+**Format:** PDF (über Markdown via `npx md-to-pdf`)
 **Sprache:** Deutsch
-**Punkteschema:** 80 Praxis (40+40) / 20 Theorie (7+7+4+2) = 100 gesamt
-**Format:** PDF (aus Markdown via pandoc/wkhtmltopdf)
+**Notenschlüssel** (analog Beispiel-PA):
+- 0–50 → 5
+- 51–63 → 4
+- 64–75 → 3
+- 76–88 → 2
+- 89–100 → 1
 
 ---
 
-## 2. Lieferobjekte und Status
+## 2. Aufbau jeder Aufgabe (1 Matura-Aufgabe = 1 PA)
 
-| Datei / Ordner | Zweck | Status |
-|---|---|---|
-| `context.md` | Dieses Dokument | **fertig** |
-| `Angabe_Maturatest.md` | Prüfungsdokument für Schüler:innen | offen |
-| `Angabe_Maturatest.pdf` | PDF-Konvertierung | offen |
-| `Angabeprojekt_TourPlaner/` | Starter-Projekt für Aufgabe 2 | offen |
-| ↳ `TourPlaner.sln` | Visual Studio Solution | offen |
-| ↳ `NetworkLib/` | Geteilte Netzwerk-Lib (Transfer, MSG, Receiver) | offen |
-| ↳ `Server/` | TCP-Server mit Daten-Loader und Algorithmen-**Stubs** | offen |
-| ↳ `Client/` | WPF-Client mit fertigem Canvas-Rendering | offen |
-| ↳ `data/pois.csv` | Beispiel-POIs (≥15 Einträge) | offen |
-| ↳ `data/verbindungen.csv` | Beispiel-Kanten | offen |
-| `Loesungsskizze_Theorie.md` | Musterlösungen zu Theoriefragen | offen |
-| `Loesungsskizze_Theorie.pdf` | PDF-Konvertierung | offen |
+Jede Praxisaufgabe ist nach dem **PA-Schema** strukturiert:
+- Nummerierte Teilaufgaben (1, 2, 3, ...)
+- Pro Teilaufgabe Punkte
+- **Vorgegebene WPF-Vorlage** im Starter-Projekt (GUI ist nicht Teil der Aufgabe)
+- Klare erwartete Verhaltensweisen
+- Keine Lösungsanleitung
 
 ---
 
-## 3. Wichtige Designentscheidungen
+## 3. Lieferobjekte
 
-### 3.1 Aufgabe 1 wird "von Grund auf" gebaut
-Schüler:innen erstellen die WPF-Solution selbst. Es gibt **kein** Starter-Projekt. Begründung: Aufgabe 1 ist konzeptionell schlank (nur Lexer, Parser, kleine UI) und das Erstellen eines neuen WPF-Projekts gehört zum Lernziel.
+| Datei / Ordner | Status |
+|---|---|
+| `context.md` | **fertig** |
+| `Angabe_Maturatest.md` + `.pdf` | offen |
+| `Angabeprojekt_AnimSkript/` | offen |
+| `Angabeprojekt_RoutenPlaner/` | offen |
+| `Loesungsskizze_Theorie.md` + `.pdf` | offen |
 
-### 3.2 Aufgabe 2 hat ein Starter-Projekt
-TourPlaner braucht Boilerplate (Solution, 3 Projekte, NetworkLib, CSV-Loader, Canvas-Rendering). Damit die Schüler:innen sich auf **Algorithmen und Netzwerk-Logik** konzentrieren können, gibt es ein vorbereitetes Projekt mit:
+---
 
-- Funktionierendem TCP-Gerüst (Transfer + MSG)
-- Funktionierendem CSV-Loader
-- Funktionierendem Canvas-Rendering der POIs
-- **Stubs** (`throw new NotImplementedException()`) für `DijkstraSolver`, `KMeansSolver`, `PermutationsTourSolver` und für die drei Operations-Handler im Server-Receiver
-- Stubs für die drei Aktionen im Client (Pfad / Cluster / Tour)
+## 4. Designentscheidungen
 
-### 3.3 Stilvorgaben (gilt für alle generierten C#-Dateien!)
+### 4.1 Beide Aufgaben haben Starter-Projekte (anders als beim ersten Anlauf)
 
-- **Sehr wenig Kommentare**, im Idealfall keine
+Schüler:innen bekommen eine **Vorlage** mit:
+- Fertige Solution + Projekte
+- Fertige WPF-GUI (XAML mit Canvas/ComboBoxen/Buttons)
+- Fertige Boilerplate (Tokenizer-Klasse leer, NetworkLib komplett, linq2db-Models scaffolded)
+- Algorithmen-Stubs mit `throw new NotImplementedException();`
+
+Dies entspricht dem PA-Pattern aus dem Bestand und lässt 2h Zeit für die eigentliche Aufgabe.
+
+### 4.2 AnimSkript — neue Domain mit klassischem AST-Baum
+
+Sprache, die einen Punkt auf einem Canvas animiert. Sprachelemente:
+- `POSITION x y` (absolute Position, kein Strich)
+- `BEWEGE dx dy` (relativ, mit Strich)
+- `FARBE name` / `DICKE n`
+- `WIEDERHOLE n MAL { ... }` (Composite)
+- `WENN <vergl> DANN { ... } SONST { ... }` (Composite)
+- Vergleich: `POSX | POSY | SCHRITT` `< | > | ==` zahl
+
+Output: gezeichnete Linie auf einem WPF-Canvas. Klarer AST-Baum mit Composite-Pattern.
+
+**Bewusste Abgrenzung zu Bestand:**
+- Anders als PA2 (Turtle): keine relativen Drehungen, sondern absolute Positionen
+- Anders als ROBOTIKERN (Grid): freier 2D-Raum
+- Hat WENN-Bedingungen mit Vergleichsoperatoren (PA2/ROBOTIKERN nicht so)
+
+### 4.3 RoutenPlaner — Dijkstra + Permutationen + linq2db
+
+- **Dijkstra**: kürzester Pfad zwischen 2 Stationen
+- **Permutationsgenerator**: beste Tour (TSP mit ≤ 6 Stationen)
+- **linq2db + SQLite** auf der **Client-Seite** (`routen.db`) für die Save/Load-Funktionalität — das matched die PA-Vorgabe ("Erstellen Sie eine SQLite Datenbank … binden Sie die Datenbank mittels ORM in das Projekt ein")
+- Server hat hardcoded Station/Verbindungs-Daten (für Konsistenz und Einfachheit, kein zweites DB-File nötig)
+- TCP/XML-Protokoll mit `MSG`-Klasse, analog `PA3_5A_2026_Reithofer/NetworkLib/`
+
+### 4.4 Stilvorgaben (für alle generierten C#-Dateien)
+
 - C# / WPF, .NET 8 oder neuer
-- Klassennamen sprechend, aber kompakt (analog `Rechner`/`PA2` aus dem Bestand)
-- `Node`/`Edge` als schlanke Datentypen (analog `AStarCanvas`)
-- `NetworkLib` analog zur Struktur in `PA3_5A_2026_Reithofer/NetworkLib/` (Transfer, MSG, Receiver-Interface)
-- Operator-Precedence-Hierarchie analog `Rechner_2026-04-30_1052/RechnerServer/` (PLUSMINUS → MALDIVIDIERT → HOCH)
-- Statement-Dispatcher analog `PA2_Reithofer_Viktor (1)/stmt.cs`
-
-### 3.4 Was die Angabe NICHT enthält
-- Keinen Lösungsweg, keine Algorithmus-Pseudocodes für die Aufgaben (nur in der **Lösungsskizze** für den Lehrer)
-- Keine Hinweise auf konkrete Klassennamen / Methodensignaturen für Aufgabe 1 (Schüler entwerfen selbst)
-- Keine fertigen Code-Snippets — nur **Beispiel-Eingabe** und **erwartetes Ergebnis**
+- **Wenig bis keine Kommentare**
+- Sprechende, kompakte Klassennamen
+- linq2db-Models analog `SubwayNetz/Stationen.cs` (Scaffold-Stil mit `[Table]`/`[Column]`)
+- NetworkLib-Struktur analog `PA3_5A_2026_Reithofer/NetworkLib/`
 
 ---
 
-## 4. Inspirations-Projekte (in `c:\Users\Viktor Reithofer\Downloads\Maturaprojekt\`)
+## 5. Inspirations-Projekte
 
-| Bestandsprojekt | Wofür als Vorlage | Wichtige Dateien |
-|---|---|---|
-| `PA3_5A_2026_Reithofer` | Netzwerk-Boilerplate (Transfer, MSG, XML-Serialisierung) | `NetworkLib/Transfer.cs`, `NetworkLib/MSG.cs` |
-| `Rechner_2026-04-30_1052` | Operator-Precedence-Hierarchie, Server-Receiver-Pattern | `RechnerServer/PLUSMINUS.cs`, `RechnerServer/Program.cs` |
-| `PA2_Reithofer_Viktor (1)` | Statement-Dispatcher, Tokenizer-Pattern | `stmt.cs`, `MainWindow.xaml.cs` (btnRun_Click) |
-| `AStarCanvas` | Canvas-Rendering von Graphen, Node/Edge-Datentypen | `Node.cs`, `Edge.cs`, `MainWindow.xaml.cs` |
-| `Fillialien` | K-Means-Implementierung mit Geo-Daten | `MainWindow.xaml.cs` (kmeans-Methode) |
-| `SubwayNetz` | Dijkstra-Implementierung in WPF | `MainWindow.xaml.cs` |
-| `ROBOTIKERN` | Token + AbstractExpression-Hierarchie | `AbstractExpression.cs`, `STMT.cs`, `WENN.cs` |
-
-**Wichtig:** Die neuen Projekte dürfen NICHT 1:1 abkupfern. Inspirieren ja, kopieren nein. Vor allem die Beispielprogramme (TableScript-Code, TourPlaner-Operationen) müssen **inhaltlich neu** sein.
+| Bestandsprojekt | Wofür als Vorlage |
+|---|---|
+| `PA3_5A_2026_Reithofer` | Netzwerk-Boilerplate (Transfer/MSG/XML), PA-Aufbau-Schema |
+| `PA2_Reithofer_Viktor (1)` | Tokenizer + Statement-Dispatcher + AST |
+| `ROBOTIKERN` | AbstractExpression-Hierarchie für AST |
+| `Rechner_2026-04-30_1052` | Operator-Precedence-Hierarchie |
+| `SubwayNetz` | linq2db-Model-Stil (scaffolded) + Dijkstra-Idee |
+| `WhatsApp_Image_2026-03-12_at_13.45.42.jpeg` | **PA-Format-Vorlage** (1–7 Teilaufgaben, Notenschlüssel) |
 
 ---
 
-## 5. Reihenfolge der Erstellung (empfohlen)
+## 6. Reihenfolge der Erstellung
 
 1. ✅ `context.md` (dieses Dokument)
-2. 🔲 `Angabe_Maturatest.md` schreiben — Hauptdokument, blockiert nichts anderes
-3. 🔲 `Angabeprojekt_TourPlaner/` aufbauen
-   1. `TourPlaner.sln` + 3 csproj-Dateien (Client/Server/NetworkLib)
-   2. `NetworkLib`: `Transfer.cs`, `MSG.cs`, `Receiver.cs`, `City.cs`-äquivalent
-   3. `data/pois.csv` + `data/verbindungen.csv`
-   4. `Server`: CSV-Loader, Receiver mit Stubs für die drei Operationen, `DijkstraSolver`, `KMeansSolver`, `PermutationsTourSolver` als Stubs
-   5. `Client`: `MainWindow.xaml` + Canvas-Rendering, drei Buttons mit Stub-Click-Handlern
-4. 🔲 `Loesungsskizze_Theorie.md` (kann auch parallel zu (2) gemacht werden)
-5. 🔲 PDF-Konvertierung beider Markdown-Dokumente
+2. 🔲 `Angabe_Maturatest.md` (Hauptdokument, PA-Format)
+3. 🔲 `Angabeprojekt_AnimSkript/` (WPF Standalone)
+4. 🔲 `Angabeprojekt_RoutenPlaner/` (Solution mit Server, Client, NetworkLib + linq2db)
+5. 🔲 `Loesungsskizze_Theorie.md`
+6. 🔲 PDF-Konvertierung
+7. 🔲 Git commit + push
 
 ---
 
-## 6. PDF-Konvertierung
+## 7. PDF-Konvertierung
 
-Zwei Wege, je nachdem was am System verfügbar ist:
-
-**Variante A — pandoc (bevorzugt):**
 ```powershell
-pandoc Angabe_Maturatest.md -o Angabe_Maturatest.pdf --pdf-engine=xelatex -V mainfont="Calibri" -V geometry:margin=2cm
+cd Maturatest
+npx --yes md-to-pdf Angabe_Maturatest.md
+npx --yes md-to-pdf Loesungsskizze_Theorie.md
 ```
 
-**Variante B — markdown → HTML → PDF (wenn pandoc fehlt):**
+Funktioniert mit Node ≥ 14 (auf diesem System bereits geprüft).
+
+---
+
+## 8. Git-Push
+
+Repo: `https://github.com/reithoferviktor/Maturaprojekt.git`, Branch `main`.
+
 ```powershell
-# Falls Node verfügbar:
-npx markdown-pdf Angabe_Maturatest.md
+git add Maturatest
+git commit -m "Matura-Test: AnimSkript + RoutenPlaner + Theorie"
+git push
 ```
 
-**Variante C — manueller Fallback:** Markdown in Visual Studio Code öffnen, Extension "Markdown PDF" installieren, "Markdown PDF: Export (pdf)" aufrufen.
-
-> **Hinweis an den Kollegen:** Wenn keiner dieser Wege funktioniert, **die Markdown-Datei abliefern und im Übergabe-Mail erwähnen**, dass die PDF-Konvertierung nicht durchgeführt werden konnte. Der User kann sie selbst in VS Code per Knopfdruck konvertieren.
+`.gitignore` für `bin/`, `obj/`, `*.db` (außer geseedeten Test-Daten) ist sinnvoll, falls noch keine vorhanden ist.
 
 ---
 
-## 7. Kompilierbarkeit des Starter-Projekts
+## 9. Theorie-Skript-Bezug
 
-Das Angabeprojekt **muss compilen**, auch wenn die Algorithmen `NotImplementedException` werfen. Nur Methoden-Bodies werfen Exceptions, **keine Syntaxfehler**, **keine fehlenden Klassen-Member**, **keine kaputten Bindings**.
+Die 13 Theorie-Fragen sind direkt an das vom User gelieferte **POS-Theorie-Skript** angelehnt:
 
-Pflichtprüfung am fertigen Starter:
-- [ ] `dotnet build` läuft ohne Fehler
-- [ ] Server startet, lädt CSVs, gibt "Lauschet auf Port 5050" o.ä. aus
-- [ ] Client startet, verbindet sich, zeigt POIs als Kreise im Canvas an
-- [ ] Klick auf "Pfad anzeigen" / "Clustern" / "Beste Tour" wirft kontrolliert eine Fehlermeldung (NotImplementedException) anstatt das Programm abstürzen zu lassen — das ist OK und Teil des Designs
-
----
-
-## 8. Verbleibende offene Punkte
-
-- Die genaue Auswahl der 15 POIs ist Geschmacksache — wir nehmen Wiener Sehenswürdigkeiten (`Stephansdom`, `Schönbrunn`, `Prater`, ...). Wenn der Kollege etwas anderes präferiert, gerne ändern.
-- Der Theoriegraph für Frage 4 (Dijkstra-Trockenlauf) wird als ASCII-Skizze ins Angabe-Dokument eingebunden — das reicht für eine schriftliche Prüfung.
-- Punkteschlüssel im Theorieteil: Block A=7, B=7, C=4, D=2. Die Punkte aus dem Plan (8, 8, 4 / 6, 5, 4, 5 / 6, 3, 3 / 3, 3, 2) müssen anteilig auf 7/7/4/2 normiert werden — siehe konkrete Zahlen unten in der Angabe.
+| Block | Skript-Themen | Punkte |
+|---|---|--:|
+| A. Sprache & Parser | ABNF-Grammatik, Chomsky-Hierarchie, Compiler-Phasen, Tokenisierung | 8 |
+| B. Graphentheorie & Algorithmen | Begriffe (Schlinge, Clique, bipartit, zentraler Knoten, aufspannender Baum), Dijkstra, Permutationen-Komplexität | 10 |
+| C. UML & Software-Pattern | Beziehungstypen, Klassendiagramm, Composite/Interpreter/Observer/Singleton erkennen | 8 |
+| D. Netzwerk, ORM, XML | XML-Regeln (Standard-Konstruktor, XmlIgnore, Polymorphie-Wrapper), Threads pro Client/Server, ORM, Datenbinding | 4 |
 
 ---
 
-## 9. Kontakt-Hinweis
+## 10. Bei Übergabe an Kollegen
 
-Falls Unklarheit besteht:
-- Plan-Datei: `C:\Users\Viktor Reithofer\.claude\plans\ziel-eine-angabe-f-r-cheeky-peach.md`
-- Bestandsprojekte: `c:\Users\Viktor Reithofer\Downloads\Maturaprojekt\` (alles außer `Maturatest/`)
+Wenn du die Implementierung weiterführen musst:
+
+1. **Lies zuerst dieses Dokument vollständig**
+2. **Pull aktuellster Stand** (`git pull` auf `main`)
+3. **Identifiziere offene Punkte** in der Tabelle aus Abschnitt 3
+4. **Hauptregel:** Wenig Kommentare im Code, knappe Sprache in der Angabe, an POS-Skript halten in der Theorie
+5. **Verifizieren am Ende:** beide Starter-Projekte kompilieren, beide PDFs öffnen sauber, `git push` läuft durch
