@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GomokuManager", "GomokuMana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkLib", "NetworkLib\NetworkLib.csproj", "{BB111111-2222-3333-4444-555555555555}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{CC111111-2222-3333-4444-555555555555}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{BB111111-2222-3333-4444-555555555555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB111111-2222-3333-4444-555555555555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB111111-2222-3333-4444-555555555555}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC111111-2222-3333-4444-555555555555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC111111-2222-3333-4444-555555555555}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC111111-2222-3333-4444-555555555555}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC111111-2222-3333-4444-555555555555}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

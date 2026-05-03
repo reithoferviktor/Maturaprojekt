@@ -23,7 +23,7 @@ public partial class MainWindow : Window
     }
 
     // ----------------------------------------------------------
-    // Spiel starten
+    // Spiel starten — lokal
     // ----------------------------------------------------------
 
     private void MenuLokal_Click(object sender, RoutedEventArgs e)
@@ -34,15 +34,7 @@ public partial class MainWindow : Window
         zuege = 0;
     }
 
-    private void MenuNetz_Click(object sender, RoutedEventArgs e)
-    {
-        // TODO 3 aufrufen: NetzController erstellen
-        // Tipp: Host + Port z.B. per InputDialog abfragen
-        ctrl = new NetzController("127.0.0.1", 5050);
-        DataContext = ctrl.Gameboard;
-        tbStatus.Text = "Netzwerk: warte auf Gegner...";
-        zuege = 0;
-    }
+    // TODO Netzwerk: eigenen Controller + Server-Verbindung hier aufbauen
 
     private void Cell_Click(object sender, RoutedEventArgs e)
     {
@@ -73,14 +65,12 @@ public partial class MainWindow : Window
     }
 
     // ----------------------------------------------------------
-    // TODO 5b — Datenbank: Partien laden und in ListBox anzeigen
+    // TODO 5b — Datenbank: Partien laden
     // ----------------------------------------------------------
     //   using var db = new GomokuDb();
-    //   var liste = db.Parties.OrderByDescending(p => p.Id).Take(10).ToList();
-    //   lbPartien.ItemsSource = liste;
+    //   lbPartien.ItemsSource = db.Parties.OrderByDescending(p => p.Id).Take(10).ToList();
     private void LoadPartien()
     {
-        // TODO: alle Partien aus DB laden und lbPartien.ItemsSource setzen
         try
         {
             using var db = new GomokuDb();
@@ -100,7 +90,6 @@ public partial class MainWindow : Window
     //   var xml = new XmlSerializer(typeof(Config));
     //   using var stream = File.OpenRead(ofd.FileName);
     //   var cfg = (Config)xml.Deserialize(stream)!;
-    //   // cfg.Groesse, cfg.Spieler1 etc. verwenden
     private void MenuXml_Click(object sender, RoutedEventArgs e)
     {
         // TODO: OpenFileDialog + XmlSerializer
@@ -119,16 +108,14 @@ public partial class MainWindow : Window
     //                         .Concat(Directory.GetFiles(ordner, "*.png"))
     //                         .ToArray();
     //
-    // Profilbild kopieren + verkleinern (ImageService):
+    // Profilbild verkleinern + anzeigen:
     //   Directory.CreateDirectory("profile");
     //   string dest = Path.Combine("profile", "profile.png");
     //   ImageService.ResizeAndSave(bilder[0], dest);   // TODO 9 Magick
-    //
-    // Bild in UI laden (TODO 10 Bitmap Decode):
-    //   imgProfil.Source = ImageService.Load(dest);
+    //   imgProfil.Source = ImageService.Load(dest);    // TODO 10 Bitmap
     private void MenuProfil_Click(object sender, RoutedEventArgs e)
     {
-        // TODO: OpenFolderDialog + Directory.GetFiles + ImageService.ResizeAndSave + ImageService.Load
+        // TODO: OpenFolderDialog + Directory.GetFiles + ImageService
         throw new NotImplementedException("TODO 7+9+10 Profilbild");
     }
 
@@ -137,9 +124,9 @@ public partial class MainWindow : Window
     // ----------------------------------------------------------
     // using MoreLinq;
     //   using var db = new GomokuDb();
-    //   var partien = db.Parties.ToList();
-    //   var beste = partien.GroupBy(p => p.Gewinner)
-    //                      .MaxBy(g => g.Count());
+    //   var beste = db.Parties.ToList()
+    //                         .GroupBy(p => p.Gewinner)
+    //                         .MaxBy(g => g.Count());
     //   MessageBox.Show($"Bester Spieler: {beste.Key} ({beste.Count()} Siege)");
     private void MenuStat_Click(object sender, RoutedEventArgs e)
     {
