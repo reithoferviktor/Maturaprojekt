@@ -6,7 +6,17 @@ public class Programm : Expression
 
     public override void Parse(List<Token> tokens)
     {
-        throw new NotImplementedException("Programm.Parse(): alle Anweisungen aus tokens lesen.");
+        while (tokens.Count > 0)
+        {
+            if (tokens[0].Type == Token.TokenType.Rkl)
+            {
+                tokens.RemoveAt(0);
+                return;
+            }
+            STMT statement = new STMT();
+            statement.Parse(tokens);
+            stmts.Add(statement);
+        }
     }
 
     public override void Run(Zeichner z)

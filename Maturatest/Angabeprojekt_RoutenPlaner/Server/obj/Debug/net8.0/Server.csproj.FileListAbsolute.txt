@@ -17,3 +17,23 @@ C:\Users\clemens\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\S
 C:\Users\clemens\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.pdb
 C:\Users\clemens\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
 C:\Users\clemens\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\ref\Server.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\bin\Debug\net8.0\Server.exe
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\bin\Debug\net8.0\Server.deps.json
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\bin\Debug\net8.0\Server.runtimeconfig.json
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\bin\Debug\net8.0\Server.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\bin\Debug\net8.0\Server.pdb
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\bin\Debug\net8.0\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\bin\Debug\net8.0\NetworkLib.pdb
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.csproj.AssemblyReference.cache
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.AssemblyInfoInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.AssemblyInfo.cs
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.csproj.CoreCompileInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.sourcelink.json
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.csproj.Up2Date
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\refint\Server.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.pdb
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\obj\Debug\net8.0\ref\Server.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\Server\bin\Debug\net8.0\MoreLinq.dll

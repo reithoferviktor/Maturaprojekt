@@ -1,0 +1,85 @@
+<Window x:Class="GomokuManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GomokuManager" Height="720" Width="1050">
+    <Window.Resources>
+        <!-- FERTIG: Vorlage fuer Spielfeld-Zellen.
+             TODO 2b — DataTrigger
+             Ergaenze innerhalb des Buttons einen <Button.Style> Block
+             mit drei DataTriggern fuer State=Empty/Black/White.
+             Empty   → Background="Beige"
+             Black   → Background="Black"
+             White   → Background="White"
+        -->
+        <DataTemplate x:Key="CellTemplate">
+            <Button Width="38" Height="38"
+                    BorderThickness="0.5" BorderBrush="#888"
+                    Tag="{Binding}"
+                    Click="Cell_Click">
+                <!-- TODO 2b: <Button.Style> mit DataTriggern hier einfuegen -->
+            </Button>
+        </DataTemplate>
+    </Window.Resources>
+
+    <DockPanel>
+        <!-- Menu -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Spiel">
+                <MenuItem Header="Lokal spielen"    Click="MenuLokal_Click"/>
+                <MenuItem Header="Netzwerk spielen" Click="MenuNetz_Click"/>
+                <Separator/>
+                <MenuItem Header="Partie speichern" Click="MenuSpeichern_Click"/>
+                <Separator/>
+                <MenuItem Header="Beenden" Click="MenuBeenden_Click"/>
+            </MenuItem>
+            <MenuItem Header="Konfiguration">
+                <!-- TODO 6: Konfiguration aus XML laden (OpenFileDialog) -->
+                <MenuItem Header="Aus XML laden..." Click="MenuXml_Click"/>
+            </MenuItem>
+            <MenuItem Header="Spieler">
+                <!-- TODO 7: Profilbild-Ordner waehlen (OpenFolderDialog) -->
+                <MenuItem Header="Profilbild waehlen..." Click="MenuProfil_Click"/>
+            </MenuItem>
+            <MenuItem Header="Statistik">
+                <!-- TODO 11: MoreLinq MaxBy -->
+                <MenuItem Header="Bester Spieler (MoreLinq)" Click="MenuStat_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Sidebar -->
+        <StackPanel DockPanel.Dock="Right" Width="200" Margin="8">
+            <TextBlock Text="Profilbild" FontWeight="Bold" Margin="0,0,0,4"/>
+            <Image x:Name="imgProfil" Height="80" Width="80"
+                   HorizontalAlignment="Left" Stretch="Uniform"
+                   Margin="0,0,0,8"/>
+
+            <TextBlock Text="Status" FontWeight="Bold"/>
+            <TextBlock x:Name="tbStatus" Text="Kein Spiel aktiv."
+                       TextWrapping="Wrap" Margin="0,0,0,12"/>
+
+            <TextBlock Text="Letzte Partien" FontWeight="Bold"/>
+            <ListBox x:Name="lbPartien" Height="220"
+                     DisplayMemberPath="Gewinner"/>
+        </StackPanel>
+
+        <!-- Spielfeld -->
+        <!--
+        TODO 2a — ItemsPanelTemplate
+        Ersetze den Platzhalter-Border durch ein echtes ItemsControl:
+
+        <ItemsControl ItemsSource="{Binding Cells}"
+                      ItemTemplate="{StaticResource CellTemplate}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Rows="15" Columns="15"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        -->
+        <Border Background="#DDD" Margin="8">
+            <TextBlock Text="TODO: ItemsControl Board hier (siehe XAML-Kommentar)"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"
+                       FontSize="14" Foreground="Gray"/>
+        </Border>
+    </DockPanel>
+</Window>

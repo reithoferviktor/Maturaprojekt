@@ -10,3 +10,15 @@ C:\Users\clemens\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\N
 C:\Users\clemens\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\refint\NetworkLib.dll
 C:\Users\clemens\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\NetworkLib.pdb
 C:\Users\clemens\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\ref\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\bin\Debug\net8.0\NetworkLib.deps.json
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\bin\Debug\net8.0\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\bin\Debug\net8.0\NetworkLib.pdb
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\NetworkLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\NetworkLib.AssemblyInfoInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\NetworkLib.AssemblyInfo.cs
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\NetworkLib.csproj.CoreCompileInputs.cache
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\NetworkLib.sourcelink.json
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\refint\NetworkLib.dll
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\NetworkLib.pdb
+C:\Users\Viktor Reithofer\Downloads\Maturaprojekt\Maturatest\Angabeprojekt_RoutenPlaner\NetworkLib\obj\Debug\net8.0\ref\NetworkLib.dll

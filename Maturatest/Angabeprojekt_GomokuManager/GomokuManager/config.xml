@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+    <Groesse>15</Groesse>
+    <Spieler1>Alice</Spieler1>
+    <Spieler2>Bob</Spieler2>
+</Config>

@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v8.0": {
       "Server/1.0.0": {
         "dependencies": {
-          "NetworkLib": "1.0.0"
+          "NetworkLib": "1.0.0",
+          "morelinq": "4.4.0"
         },
         "runtime": {
           "Server.dll": {}
+        }
+      },
+      "morelinq/4.4.0": {
+        "runtime": {
+          "lib/net8.0/MoreLinq.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
         }
       },
       "NetworkLib/1.0.0": {
@@ -29,6 +38,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "morelinq/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QX3bsK9oFeUXk8tFsc9NkI6NnCr8Ar/ex027p+ZZ/jdLCdX2RlryDtxUqZW5j45NVwn4E4Z4hzupsoMQd6Yxtg==",
+      "path": "morelinq/4.4.0",
+      "hashPath": "morelinq.4.4.0.nupkg.sha512"
     },
     "NetworkLib/1.0.0": {
       "type": "project",

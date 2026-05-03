@@ -17,8 +17,8 @@ public partial class MainWindow : Window, Receiver
 
     private Transfer? transfer;
 
-    public List<StationDto> Stationen { get; } = new();
-    public List<EdgeDto> Verbindungen { get; } = new();
+    public List<StationDto> Stationen { get; set; } = new();
+    public List<EdgeDto> Verbindungen { get; set; } = new();
 
     private List<int> letzterPfad = new();
     private string letzterTyp = "";
@@ -99,12 +99,14 @@ public partial class MainWindow : Window, Receiver
                 Canvas.SetLeft(num, s.X - 14);
                 Canvas.SetTop(num, s.Y + 8);
                 canvas.Children.Add(num);
+
             }
         }
     }
 
     public void ReceiveMessage(MSG m, Transfer t)
     {
+        
         Dispatcher.Invoke(() =>
         {
             try { HandleMessage(m); }
@@ -124,7 +126,31 @@ public partial class MainWindow : Window, Receiver
         // Auf MsgType.PathAnswer reagieren -> Pfad rot zeichnen (ZeichnePfad).
         // Auf MsgType.TourAnswer reagieren -> Tour blau zeichnen (ZeichnePfad mit Nummerierung).
         // Auf MsgType.Error reagieren -> Fehlertext im Statustext anzeigen.
-        throw new NotImplementedException("HandleMessage: eingegangene MSG je nach Type behandeln.");
+        if (m.Type == MsgType.InitAnswer)
+        {
+                lblStatus.Text = "Verbindung getrennt.";
+                cbNach.Items.Clear();
+                cbVon.Items.Clear();
+                Stationen = m.Stationen;
+                Verbindungen = m.Verbindungen;
+                foreach (var item in m.Stationen)
+                {
+                    cbVon.Items.Add(item);
+                    cbNach.Items.Add(item);
+                    lbTour.Items.Add(item);
+                }
+                Redraw();
+        }
+        else if(m.Type == MsgType.PathAnswer)
+        {
+            ZeichnePfad(m.PathIds, Brushes.Red, false);
+            lblStatus.Text = m.Distanz.ToString();
+
+        }
+        else if (m.Type == MsgType.TourAnswer)
+        {
+            ZeichnePfad(m.PathIds, Brushes.Blue, true);
+        }
     }
 
     private void btnVerbinden_Click(object sender, RoutedEventArgs e)
@@ -132,20 +158,39 @@ public partial class MainWindow : Window, Receiver
         // TODO Aufgabe 2.1: TcpClient zu Host:Port oeffnen,
         // Transfer instanziieren, Start() aufrufen,
         // MSG mit Type=InitRequest senden, lblStatus aktualisieren.
-        throw new NotImplementedException("btnVerbinden: Verbindung aufbauen.");
+        transfer = new Transfer(new TcpClient(Host, 5050), this);
+        transfer.Start();
+        transfer.Send(new MSG { Type = MsgType.InitRequest });
     }
 
     private void btnPfad_Click(object sender, RoutedEventArgs e)
     {
         // TODO Aufgabe 2.3 (Client-Teil): MSG mit PathRequest, FromId/ToId aus den ComboBoxen senden.
-        throw new NotImplementedException("btnPfad: PathRequest senden.");
+        StationDto von = (StationDto)cbVon.SelectedItem;
+        StationDto nach = (StationDto)cbNach.SelectedItem;
+
+        transfer.Send(new MSG { FromId = von.Id, ToId = nach.Id, Type = MsgType.PathRequest });
     }
 
     private void btnTour_Click(object sender, RoutedEventArgs e)
     {
         // TODO Aufgabe 2.4 (Client-Teil): SelectedItems aus lbTour (max 6) zu Liste<int>,
         // MSG mit TourRequest senden.
-        throw new NotImplementedException("btnTour: TourRequest senden.");
+        if (lbTour.SelectedItems.Count > 6)
+        {
+            MessageBox.Show("Maximal 6 Städte für eine Tour auswählen!");
+        }
+        else
+        {
+            List<int> SelectedIds = new List<int>();
+            foreach (var item in lbTour.SelectedItems)
+            {
+                StationDto stat = (StationDto)item;
+                SelectedIds.Add(stat.Id);
+            }
+            transfer.Send(new MSG {Type = MsgType.TourRequest, SelectedIds = SelectedIds});
+            
+        }
     }
 
     private void miSpeichern_Click(object sender, RoutedEventArgs e)

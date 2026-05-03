@@ -5,10 +5,10 @@ public class Token
     public enum TokenType
     {
         Position, Bewege, Farbe, Dicke,
-        Wiederhole, Mal, Wenn, Dann, Sonst,
+        Wiederhole, Mal, Wenn, Dann, Color,
         PosX, PosY, Schritt,
         Lkl, Rkl,
-        Number, Word,
+        Number,
         Less, Greater, Equal,
         Error
     }

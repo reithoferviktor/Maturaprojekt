@@ -18,6 +18,11 @@ public class StationDto
     public string Name = "";
     public double X;
     public double Y;
+
+    public override string ToString()
+    {
+        return Name;
+    }
 }
 
 public class EdgeDto
